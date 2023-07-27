@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main{
+  max-width: 1440px;
+  margin: 32px auto 80px;
+}
+
+.message-box{
+  max-width: 648px;
+  padding: 0 24px;
+  margin: 0 auto;
+  text-align: left;;
+}
+.thanks{
+  margin-bottom: 32px;
+  font-family: "ta-oonishi";
+  font-size: 2.4rem;
+}
+.thanks::after{
+  background-color: #fff;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  filter:
+    drop-shadow(0px 0px 2px #f0f)
+    drop-shadow(0px 0px 2px #09f)
+    drop-shadow(0px 0px 2px #09f)
+    drop-shadow(0px 0px 5px #90f)
+    drop-shadow(0px 0px 15px #09f);
+  animation: move-underline 4s linear infinite;
+}
+@keyframes move-underline {
+  0% {
+    transform: translateX(-100%) scale(0);
+  }
+  9% {
+    transform: translateX(-100%) scale(0);
+  }
+  10%{
+    transform: translateX(-100%) scale(0.7);
+  }
+  20% {
+    transform: translateX(2100%) scale(1.2);
+  }
+  40% {
+    transform: translateX(6300%) scale(0);
+  }
+  46% {
+    transform: translateX(6300%) scale(0);
+  }
+  50% {
+    transform: translateX(6300%) scale(1);
+  }
+  54% {
+    transform: translateX(6300%) scale(0);
+  }
+  100% {
+    transform: translateX(6300%) scale(0);
+  }
+
+}
+
+.inquiry{
+  margin-top: 20px;
+}
+
+@media (min-height: 680px){
+  .footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+

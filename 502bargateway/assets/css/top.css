@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#loading_content{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background-color: #000;
+}
+#loading-pic{
+  display: block;
+  margin: 20px 0 0 2vw ;
+  min-width: 350px;
+  width: 100vw;
+  max-width: 100vh;
+  aspect-ratio: 5/4;
+  position: relative;
+}
+#circle-inside, #circle-middle, #circle-outside, #circle-number, #bar-name{
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  object-position: 0 top;
+}
+#bar-name{
+  z-index: 999999;
+}
+#circle-number{
+  z-index: 99999;
+}
+#circle-outside{
+  z-index: 99;
+  animation: rote-outside 8s linear infinite;
+}
+@keyframes rote-outside {
+  0% {
+    transform: rotate3d(0,0,1,0deg);
+    transform-origin:37% 48% 0;
+  }
+  100% {
+    transform: rotate3d(0,0,1,360deg);
+    transform-origin:43% 51% 0;
+  }
+}
+#circle-middle{
+  z-index: 999;
+  animation: rote-middle 6s linear infinite;
+}
+@keyframes rote-middle {
+  0% {
+    transform: rotate3d(0,0,1,0deg);
+    transform-origin:40% 50% 0;
+  }
+  100% {
+    transform: rotate3d(0,0,1,-360deg);
+    transform-origin:42% 49% 0;
+  }
+}
+#circle-inside{
+  z-index: 9999;
+  animation: rote-inside 7s linear infinite;
+}
+@keyframes rote-inside {
+  0% {
+    transform: rotate3d(0,0,1,0deg);
+    transform-origin:38% 52% 0;
+  }
+  100% {
+    transform: rotate3d(0,0,1,360deg);
+    transform-origin:43% 50% 0;
+  }
+}
+#loading_line{
+  width: 90vw;
+  height: 20px;
+  margin: 30px auto;
+}
+
+.section__concept{
+  margin-bottom: 80px;
+}
+.section__concept img{
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+.concept__catchcopy{
+  margin-bottom: 32px;
+  padding: 24px;
+  font-family: "ta-oonishi";
+  font-size: 2.4rem;
+}
+.concept__catchcopy .space-point::after{
+  content: "\A";
+}
+.concept__description{
+  margin-bottom: 20px;
+  padding: 0 24px;
+}
+.concept__description .break-point::after{
+  content: "\A";
+  white-space: pre;
+}
+.button__link{
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+}
+.concept__button{
+  height: 40px;
+  width: 180px;
+  padding: 6px 12px;
+  margin: 0 auto;
+}
+@media (min-width: 481px) and (max-width: 767px){
+  .concept__catchcopy .space-point::after{
+    white-space: pre;
+  }
+  .concept__description .break-point::after{
+    content: "";
+  }
+}
+@media (max-width: 480px){
+  .concept__catchcopy .space-point::after{
+    white-space: pre;
+  }
+  .concept__catchcopy .break-point__mobile::after{
+  content: "\A";
+  white-space: pre;
+  }
+  .concept__description .break-point::after{
+    content: "";
+  }
+}
+
+
+.section__menu{
+  margin-bottom: 80px;
+}
+.section__menu h2{
+  margin-bottom: 32px;
+  padding-left: 24px;
+  text-align: left;
+}
+.section__menu h3{
+  margin-bottom: 20px;
+  padding-left: 36px;
+  text-align: left;
+}
+.section__menu .drink-menu, .section__menu .food-menu{
+  padding: 0 40px 20px 48px;
+}
+.section__menu ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section__menu ul li{
+  display: flex;
+}
+.section__menu ul .menu__description{
+  padding: 4px 8px 8px;
+  text-align: left;
+}
+.section__menu ul li .menu__pic, .section__menu ul li .menu__body{
+  width: 224px;
+}
+.section__menu .menu__pic img{
+  width: 224px;
+  object-fit: cover;
+  object-position: center;
+}
+.menu__body .menu__name-price{
+  padding: 8px 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__body .menu__name{
+  text-align: left;
+}
+.menu__body .menu__price{
+text-align: right;
+}
+
+.sub-section__drink{
+  margin-bottom: 32px;
+}
+.sub-section__food{
+  margin-bottom: 32px;
+}
+.menu__button{
+  height: 40px;
+  width: 180px;
+  padding: 6px 12px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px){
+  .section__menu h3{
+    margin-bottom: 0px;
+    padding-left: 32px;
+  }
+  .section__menu .drink-menu, .section__menu .food-menu{
+    padding: 0 28px 20px 36px;
+  }
+  .section__menu ul li{
+    margin-top: 12px;
+  }
+  .section__menu ul li .menu__pic{
+    width: 144px;
+  }
+  .section__menu ul li .menu__body{
+    width: 166px;
+  }
+  .section__menu .menu__pic img{
+    width: 144px;
+    height: 70%;
+    padding-top: 50px;
+  }
+  .menu__body .menu__name-price{
+    display: block;
+  }
+  .menu__body .menu__name-price span{
+    display: block;
+  }
+  .menu__body .menu__name-price .menu__name{
+    text-align: left;
+  }
+  .menu__body .menu__name-price .menu__price{
+    text-align: right;
+  }
+  .menu__body .menu__name-price .menu__price::before{
+    content: "…… ";
+  }
+}
+
+
+.section__store-list{
+  margin-bottom: 80px;
+}
+.section__store-list h2{
+  padding-left: 24px;
+  text-align: left;
+}
+.section__store-list ul{
+  padding: 0 24px 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section__store-list ul li{
+  min-width: 320px;
+  padding: 32px 24px 0px;
+  flex: 0 0 33%;
+}
+.section__store-list ul li .store__body{
+  padding-bottom: 12px;
+}
+
+.section__store-list ul li h3{
+  text-align: left;
+}
+.section__store-list ul li address, .section__store-list ul li p{
+  padding-left: 8px;
+  text-align: left;
+  font-style: normal;
+}
+.section__store-list ul li .map {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.store-list__button{
+  height: 40px;
+  width: 180px;
+  padding: 6px 12px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section__store-list ul{
+    padding: 0 18px 20px;
+  }
+  .section__store-list ul li{
+    min-width: 340px;
+    padding: 32px 18px 0px;
+    flex: 0 0 33%;
+  }
+  .section__store-list ul li .store__body{
+    padding-bottom: 12px;
+  }
+}
+
+.section__news{
+  margin-bottom: 80px;
+}
+
+.section__news h2{
+  margin: 0 0 32px 24px;
+  text-align: left;
+}
+.section__news ol{
+  height: 248px;
+  margin: 0 48px;
+  padding: 8px;
+  text-align: left;
+  list-style: none;
+  border: 1px solid #fff;
+  overflow-y: scroll;
+}
+.section__news ol li{
+  margin-bottom: 24px;
+}
+.news__title{
+  font-family: "vdl-admin";
+}
+.news__title p{
+  display: inline-block;
+}
+.section__news ol li .news__body{
+  margin-top: 4px;
+  padding-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .section__news ol{
+    margin: 0 36px;
+  }
+}
+
+
+

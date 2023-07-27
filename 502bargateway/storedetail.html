@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<meta name="description" content="クリエイターや研修者の夜通しの作業を応援するバー「502 Bar Gateway」です。">
+<meta property="og:title" content="クリエイターや研究者のための「502 Bar Gateway」">
+<meta property="og:site_name" content="502 Bar Gateway">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja-JP">
+<meta property="og:image" content="assets/images/common/ogp.jpg">
+<meta property="og:description" content="クリエイターや研修者の夜通しの作業を応援するバー「502 Bar Gateway」です。">
+<meta name="twitter:card" content="summary" >
+<meta name="format-detection" content="telephone=no">
+<title>502 Bar Gateway</title>
+
+<link href="assets/images/common/favicon.ico" rel="icon" type="image/x-icon" >
+<link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png" >
+
+<!-- *** fonts adobe web project********* -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'lri4hjo',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+<!-- *** stylesheet ********* -->
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/storedetail.css">
+
+<!-- *** jquery ********* -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   <!--jquery-->
+
+</head>
+<body>
+<header class="header">
+  <div class="header__content">
+    <a id="top" class="top-link" href="index.html">
+    </a>
+    <input id="nav-input" class="none" type="checkbox">
+    <label id="nav-open" for="nav-input"><span></span></label>
+    <label id="nav-close" class="none" for="nav-input"></label>
+    <label id="nav-close-x" class="none" for="nav-input"><span></span></label>
+    <nav id="nav-drawer" class="nav-drawer">
+        <ul>
+          <li><a id="concept_navlink" href="concept.html">コンセプト</a></li>
+          <li><a id="menu_navlink" href="menu.html">メニュー</a></li>
+          <li><a id="storelist_navlink" href="storelist.html">店舗一覧</a></li>
+          <li><a id="reserve_navlink" href="reserve.html">予約・空き</a></li>
+          <li><a id="recruit_navlink" href="recruit.html">求人情報</a></li>
+        </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+<section class="section__vacant">
+  <select id="store__select" name=”store__select” class="store__select neon__orange-frame" onchange="showCalendar(today), open_storelink(), changeStoreContent()">
+    <option value="shinjuku">新宿店</option>
+    <option value="shibuya">渋谷店</option>
+    <option value="takadanobaba">高田馬場店</option>
+    <option value="ocyanomizu">御茶ノ水店</option>
+    <option value="hongousancyoume">本郷三丁目店</option>
+    <option value="meidaimae">明大前店</option>
+  </select>
+  <div class="store__vacant-state">
+    <h3>空き状況</h3>
+    <p class="vacant-state-time">（更新：23時34分）</p>
+    <div class="state-symbol">
+      <p id="vacant-state" class="vacant-state neon__orange-frame">空席</p>
+      <p id="vacant-state-end" class="vacant-state-post neon__orange-frame">あります</p>
+    </div>
+  </div>
+  <a id="reserve_form_link" class="button__link" onclick = "changelinkhref(this)" href="reserve.html">
+    <div class="reserve__button neon__orange-frame">
+      <p>予約する</p>
+    </div>
+  </a>
+  <div class="date__vacant">
+    <div class="date__vacant-calendar">
+      <div id="next-prev-button"><!-- 月移動のボタン -->
+        <button id="prev" onclick="prevcalendar()">‹</button>
+        <h3 id="calendar_header">-</h3><!-- 年月の表示 -->
+        <button id="next" onclick="nextcalendar()">›</button>
+      </div>
+      <div id="vacant_calendar"></div>
+    </div>
+  </div>
+</section>
+<section class="section__storedetail">
+  <div class="storedetail-address">
+    <h3>店舗情報</h3>
+    <div class="address__wrap">
+      <address id="address">住所：東京都世田谷区松原2-45</address>
+      <p id="phonenumber">電話番号：<a href="tel:">XX-XXXX-XXXX</a></p>
+      <p id="buisinesshour">営業時間：21:00〜翌7:00</p>
+      <p id="url">URL：<a href="https://example.com">https://example.com</a></p>
+    </div>
+    <div id = map_box>
+      <iframe id="map" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6480.981868285192!2d139.68775029429742!3d35.68953480421677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2z5paw5a6_6aeF!5e0!3m2!1sja!2spt!4v1687461404317!5m2!1sja!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="storedetail-info">
+    <h3>店内写真</h3>
+    <div class="storedetail-pic__list">
+      <img src="assets/images/storedetail/storefloor.png" alt="店内写真">
+      <img src="assets/images/storedetail/barcounter.png" alt="カウンター写真１">
+      <img src="assets/images/storedetail/liquor.png" alt="カウンター写真２">
+      <img src="assets/images/storedetail/monitor.png" alt="店内写真">
+      <img src="assets/images/storedetail/madori.png" alt="間取り図">
+      <div class="store-equipment__wrap">
+        <h4 class="store-equipment">設備詳細</h4>
+        <div class="equipment__table-wrap">
+          <table class="equipment__table">
+            <tr>
+              <th>設備</th>
+              <td>男性トイレ、女性トイレ</td>
+            </tr>
+            <tr>
+              <th>駐車場</th>
+              <td>なし</td>
+            </tr>
+            <tr>
+              <th>決済</th>
+              <td>現金、クレジットカード、<span class="beak-point"></span>デビットカード</td>
+            </tr>
+            <tr>
+              <th>貸切</th>
+              <td>あり　＊要相談</td>
+            </tr>
+            <tr>
+              <th>座席</th>
+              <td>
+                カウンター６席<br>
+                テーブル４席 × 6<br>
+                ディスプレイ付き6席
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer__content">
+    <a class="top-link" href="index.html">
+      <img class="footer__nav-top" src="assets/images/footer/footer_502_PC.png" alt="502 Bar Gateway">
+    </a>
+    <div class="sns">
+      <ul>
+        <li>
+          <a href=""><img src="assets/images/footer/Twittersocialicons-roundedsquare-white.png" alt="Twitterアイコン"></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/images/footer/Instagram_Glyph_White.png" alt="Instagramアイコン"></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/images/footer/f_logo_RGB-White.png" alt="Facebookアイコン"></a>
+        </li>
+      </ul>
+    </div>
+    <nav class="footer__nav">
+      <ul class="nav-up">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="concept.html">コンセプト</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+      </ul>
+      <ul class="nav-down">
+        <li><a href="storelist.html">店舗一覧</a></li>
+        <li><a  href="reserve.html">予約・空き</a></li>
+        <li><a href="recruit.html">求人情報</a></li>
+      </ul>
+    </nav>
+    <small><a href="nowconstruction.html">プライバシーポリシー・利用規約</a></small>
+    <small>©502 Bar Gateway All Rights Reserved.</small>
+  </div>
+  <div id="footer__button-wrap">
+    <a id="footer-button__link" class="button__link" href="reserve.html" onclick="changelinkhref(this)">
+      <div id="footer__reserve-button" class="reserve-button">
+        <p>空き・予約</p>
+      </div>
+    </a>
+  </div>
+  <div id="arrow-top" class="arrow-top-wrap none">
+    <a class="arrow-top" href="#top"><span class="arrow"></span></a>
+  </div>
+</footer>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/calendar.js"></script>
+<script src="assets/js/storedetail.js"></script>
+</body>
+</html>

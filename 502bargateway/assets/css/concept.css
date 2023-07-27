@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/* CSS Document */
+.main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section__concept{
+  margin: 20px 0 80px;
+  background-image: url("../images/concept/server.png"),url( "../images/concept/monitor.png") ,url("../images/concept/counter.png");
+  background-size: 28% auto;
+  background-repeat: no-repeat;
+  background-position:24px 150px,97% 360px, 24px 600px;
+}
+.section__concept h2{
+  padding-left: 24px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+.concept__catchcopy{
+  margin-bottom: 40px;
+  padding: 0 48px;
+  font-family: "ta-oonishi";
+  font-size: 2.4rem;
+}
+.concept__catchcopy .space-point::after{
+  content: "\A";
+}
+.concept__description .break-point::after{
+  content: "\A";
+  white-space: pre;
+}
+
+.concept__description{
+  max-width: 520px;
+  width: 40vw;
+  margin: 0 auto 60px;
+  text-align: left;
+}
+.button__link{
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+}
+.concept__content-seat, .concept__content-drinkfood{
+  max-width: 520px;
+  width: 40vw;
+  margin: 0 auto 60px;
+  text-align: left;
+}
+
+.concept__content-title{
+  display: inline-block;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.concept__content-description{
+  margin-bottom: 32px;
+}
+
+.picture__button, .menu__button{
+  height: 40px;
+  width: 180px;
+  padding: 6px 12px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  .section__concept{
+    background-image: none;
+  }
+  .concept__description{
+    width: 80vw;
+    margin-bottom: 32px;
+  }
+  .concept__content-seat, .concept__content-drinkfood{
+    width: 80vw;
+  }
+  .concept__description-pic, .concept__seat-pic, .concept__drinkfood-pic{
+    width: 80vw;
+    max-width: 520px;
+    height: 40vw;
+    margin: 32px auto 0;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .concept__description-pic{
+    background-image: url(../images/concept/server.png);
+    margin-bottom: 60px;
+  }
+  .concept__seat-pic{
+    background-image: url(../images/concept/monitor.png);
+  }
+  .concept__drinkfood-pic{
+    background-image: url(../images/concept/counter.png);
+  }
+}
+@media (min-width: 481px) and (max-width: 767px){
+  .concept__catchcopy .space-point::after{
+    white-space: pre;
+  }
+  .concept__description .break-point::after{
+    content: "";
+  }
+}
+@media (max-width: 480px){
+  .concept__catchcopy .space-point::after{
+    white-space: pre;
+  }
+  .concept__catchcopy .break-point__mobile::after{
+  content: "\A";
+  white-space: pre;
+  }
+  .concept__description .break-point::after{
+    content: "";
+  }
+}
+
+.section__representative{
+  margin-bottom: 80px;
+}
+
+.section__representative h2{
+  text-align: left;
+  padding-left: 24px;
+}
+
+.representative-content{
+  padding: 0 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.representative-pic, .representative-body , .representative-gallery{
+  margin-top: 32px;
+}
+
+.representative-content ul{
+  list-style: none;
+}
+
+.representative-body , .representative-gallery img{
+  padding: 0 12px ;
+}
+.representative-pic img{
+  width: 424px;
+  height: 100%;
+  padding: 0 12px;
+  object-fit: cover;
+  object-position: center;
+}
+.representative-body{
+  max-width: 496px;
+  text-align: left;
+}
+.representative-body__introduction{
+  margin-bottom: 20px;
+}
+.representative-body__career li{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.career-year{
+  flex: 0 0 52px;
+}
+.career-month{
+  flex: 0 0 32px;
+}
+.career-contents{
+  flex: 1;
+}
+
+@media (max-width: 480px){
+  .representative-content{
+    padding: 0 24px;
+  }
+  .representative-pic img, .representative-gallery img{
+    width: 327px;
+  }
+}
+@media (max-width: 435px){
+  .break-point__mobile::after{
+    content: "\A";
+    white-space: pre;
+  }
+}
+

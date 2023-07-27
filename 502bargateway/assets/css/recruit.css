@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+.main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.section__wrap{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.div__message{
+  max-width: 600px;
+  margin: 20px auto 80px;
+}
+.div__message .message-body{
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 24px;
+  font-family: "ta-oonishi";
+  font-size: 3.0rem;
+}
+
+@media (max-width: 600px){
+  .message-body .break-point::after{
+    content: "\A";
+    white-space: pre;
+  }
+  .message-body.neon__green-under::after{
+    display: none;
+  }
+  .div__message .message-body{
+    padding: 12px 20px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    box-shadow:
+      0 0 0.2rem #fff,
+      inset 0 0 0.2rem #fff,
+      0 0 1.0rem #0f1,
+      inset 0 0 1.0rem #0f1,
+      0 0 1.5rem #0f1,
+      inset 0 0 1.5rem #0f1;
+  }
+}
+@media (max-width: 520px){
+  .message-body .break-point-mobile::after{
+    content: "\A";
+    white-space: pre;
+  }
+}
+
+.section__arbeit, .section__midcareer, .section__newcareer{
+  padding: 0 24px;
+  margin: 0 auto 80px;
+  flex: 1;
+}
+.section__arbeit h2, .section__midcareer h2, .section__newcareer h2{
+  margin-bottom: 20px;
+}
+.arbeit-requirement, .midcareer-requirement, .newcareer-requirement{
+  width: 322px;
+  margin: 0 auto 20px;
+  border: 1px solid #ccc;
+}
+.section__wrap tr, .section__wrap td,.section__wrap th {
+  padding: 5px;
+  border: 2px solid #ccc;
+}
+.midcareerpage__button , .newcareerpage__button{
+  height: 40px;
+  width: 180px;
+  padding: 6px 12px;
+  margin: 0 auto;
+  border-radius: 40px;
+}

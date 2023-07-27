@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* CSS Document */
+.main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.section__vacant{
+  padding: 20px 0 12px;
+  margin: 0 auto 40px;
+  background-image: url(../images/storedetail/vacant.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* セレクトボックスのデフォルトのデザインを消す、もしくは選択矢印のみ消す */
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* IE用の設定 */
+select::-ms-expand {
+  display: none; /* デフォルトの矢印を非表示(IE用) */
+}
+/* セレクトボックスの設定、矢印を含む */
+.section__vacant .store__select{
+  min-width: 300px;
+  width: 40vw;
+  height: 48px;
+  padding: 0px 28px;
+  line-height: 1.0;
+  margin-bottom: 32px;
+  font-family: "vdl-admin";
+  font-size: 2.4rem;
+  color: #ddd;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 48px;
+  background-color: #000;
+  background-image: url(../images/storedetail/select_arrow.png);
+  background-size: 18px 11px;
+  background-position: top 17px right 28px;
+  background-repeat: no-repeat;
+}
+
+.section__vacant .store__vacant-state h3{
+  margin-bottom: 0px;
+}
+.vacant-state-time{
+  font-size: 1.4rem;
+}
+.section__vacant .store__vacant-state .state-symbol{
+  width: 220px;
+  height: 150px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+.section__vacant .store__vacant-state .state-symbol .vacant-state{
+  width: 120px;
+  height: 120px;
+  padding: 32px 0 0 5px;
+  text-align: center;
+  font-size: 3.2rem;
+  position: absolute;
+  top: 16px;
+  left: 48px;
+  border-radius: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.section__vacant .store__vacant-state .state-symbol .vacant-state-post{
+  width: 90px;
+  position: absolute;
+  top: 98px;
+  left: 140px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1.5px solid rgba(255, 255, 255, 1);
+}
+/* ↑↑ 現在の空席情報を反映してフレームの色と、文字を切り替えたい。サーバーサイドのコーディングが必要かも。*/
+
+.section__vacant .reserve__button{
+  height: 40px;
+  width: 180px;
+  padding: 6px 12px;
+  margin: 0 auto 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.button__link{
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.date__vacant{
+  margin: 0 24px 20px;
+}
+.date__vacant-calendar{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px 10px 10px;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+}
+#vacant_calendar{
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#calendar_header {
+  text-align: center;
+  font-size: 2.0rem;
+  width: 100%;
+  margin: 1rem 0 0;
+}
+#vacant_calendar {
+  text-align: center;
+  width: 100%;
+}
+.date__vacant table {
+  outline: 2px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+}
+.date__vacant th {
+  color: #fff;
+}
+.date__vacant th, .date__vacant td {
+  outline: 1px solid #ddd;
+  padding: 0px 5px 5px;
+  text-align: center;
+}
+/*日曜日*/
+.date__vacant td:first-child {
+  color:#f00;
+}
+/*土曜日*/
+.date__vacant td:last-child {
+  color:#05f;
+}
+.date__vacant /*前後月の日付*/
+td.disabled {
+  color: #666;
+}
+/*本日*/
+.date__vacant td.today {
+  background-color: rgba(255, 0, 0, 0.4);
+  color: #fff;
+}
+
+/*ボタン*/
+#next-prev-button {
+  display: flex;
+  justify-content: space-between;
+}
+#next-prev-button button{
+  background: #000;
+  color: #ddd;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+#next-prev-button button:hover{
+  background-color: #555;
+  border: 2px solid #fff;
+}
+#prev {
+  float: left;
+}
+#next {
+  float: right;
+}
+
+.section__storedetail{
+  margin-bottom: 80px;
+}
+.section__storedetail .storedetail-address h3{
+  margin-bottom: 12px;
+  padding-left: 36px;
+  text-align: left;
+}
+.section__storedetail .address__wrap{
+  margin-bottom: 12px;
+}
+.section__storedetail address, .section__storedetail p{
+  padding-left: 48px;
+  text-align: left;
+  font-style: normal;
+}
+.section__storedetail .map{
+  margin: 0 auto 40px;
+  padding: 0 60px;
+  width: 100%;
+  max-width: 1400px;
+  aspect-ratio: 5/2;
+}
+.section__storedetail .storedetail-info h3{
+  padding-left: 36px;
+  text-align: left;
+}
+.section__storedetail .storedetail-pic__list{
+  padding: 0 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.section__storedetail .storedetail-pic__list img{
+  margin: 20px 8px 0;
+  max-width: 424px;
+  width: 100%;
+}
+.store-equipment__wrap{
+  margin: 20px 8px 0;
+  width: 424px;
+}
+.store-equipment{
+  margin-bottom: 12px;
+}
+.equipment__table{
+  margin: 0 auto;
+}
+.equipment__table tr{
+    border: 2px solid #ccc;
+}
+.equipment__table th{
+  width: 60px;
+  border: 2px solid #ccc;
+}
+.equipment__table td{
+  padding: 5px;
+  color: #fff;
+  border: 2px solid #ccc;
+}
+
+@media (max-width: 480px) {
+  .section__storedetail .storedetail-address h3, .section__storedetail .storedetail-info h3{
+    padding-left: 32px;
+  }
+  .section__storedetail address, .section__storedetail p{
+    padding-left: 36px;
+  }
+  .section__storedetail .map{
+    padding: 0 48px;
+  }
+  .section__storedetail .storedetail-pic__list{
+    padding: 0 40px;
+  }
+  .section__storedetail .storedetail-pic__list img{
+    margin: 20px 0px 0;
+    max-width: 432px;
+  }
+  .store-equipment__wrap{
+    margin: 20px 0px 0;
+  }
+  .equipment__table tr td .beak-point::after{
+    content: "\A";
+    white-space: pre;
+  }
+}

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav__menu-link{
+  margin: 20px auto 40px;
+  display: flex;
+  justify-content: center;
+  font-family: "vdl-admin";
+  font-size: 2.0rem;
+}
+.nav__menu-link a.food-link, .nav__menu-link a.drink-link{
+  margin-right: 50px;
+}
+
+.section__drink{
+  margin: 20px 0 80px;
+}
+.section__food{
+  margin-bottom: 80px;
+}
+.section__drink h2{
+  padding-left: 24px;
+  text-align: left;
+}
+.section__food h2{
+  padding-left: 24px;
+  text-align: left;
+}
+.section__drink-content, .section__food-content{
+  padding: 0 30px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-body{
+  width: 339px;
+  max-height: 390px;
+  padding: 32px 6px 0;
+}
+.menu-title{
+  max-width: 339px;
+  padding-bottom: 12px;
+  text-align: left;
+  display: inline-block;
+}
+.no-title .menu-title{
+  padding-bottom: 14px;
+}
+.menu-list{
+  padding-left: 12px;
+  list-style: none;
+}
+.menu-list li{
+  display: flex;
+}
+.menu-list li .menu__name{
+  flex: 3;
+  text-align: left;
+}
+.menu-list li .menu__price{
+  flex: 1;
+  text-align: right;
+}
+.menu-pic .drink-pic, .menu-pic .food-pic{
+  padding-left: 12px;
+}
+
+.section__food .section__food-content div ul li{
+  margin-bottom: 20px;
+}
+.section__food .section__food-content div ul li.no-margin{
+  margin-bottom: 0px;
+}
+.section__food .section__food-content div ul li:last-child{
+  margin-bottom: 0px;
+}
+
+.section__plan{
+  margin-bottom: 80px;
+}
+.section__plan h2{
+  padding-left: 24px;
+  text-align: left;
+}
+.section__plan-content{
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section__plan-content .hour3, .hour6, .day1{
+  max-width: 464px;
+  margin-top: 32px;
+  padding: 0 12px;
+  text-align: left;
+}
+.section__plan-content .plan-title{
+  margin-bottom: 12px;
+  display: inline-block;
+  text-align: left;
+}
+.section__plan-content .plan-description{
+  padding: 0 0 0 12px;
+  text-align: left;
+}
+.section__plan-content .plan__price{
+  padding: 0 0 0 12px;
+  text-align: right;
+}
+
+@media (max-width: 480px){
+  .section__drink-content, .section__food-content{
+    padding: 0 26px;
+  }
+  .section__plan-content{
+    padding: 0 20px;
+  }
+  .menu-pic .drink-pic, .menu-pic .food-pic{
+    width: 100%;
+    height: auto;
+    padding: 0 8px;
+  }
+  .menu-list{
+    padding-left: 8px;
+  }
+  .section__plan-content .plan-description{
+    padding: 0 0 0 8px;
+  }
+}
+
+@media (max-width: 737px){
+  .no-title{
+    padding-top: 0;
+  }
+  .no-title .menu-title{
+    padding-bottom: 2px;
+  }
+}
+
+

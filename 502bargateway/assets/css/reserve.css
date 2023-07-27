@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main{
+  background-image: url(../images/reserve/reserve.png);
+  background-size: 100% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px){
+  .main{
+    background-image: none;
+  }
+}
+.section__vacant{
+  margin-bottom: 32px;
+  background-image: none;
+}
+.date__vacant{
+  margin-bottom: 0;
+}
+.div__form{
+  max-width: 648px;
+  padding: 0 24px 20px;
+  margin: 0 auto 60px ;
+}
+.div__form > div{
+  margin: 0 auto 32px;
+  text-align: left;
+}
+.div__form label{
+  margin-bottom: 12px;
+  padding-left: 10px;
+  display: block;
+}
+.div__form > div input{
+  width: 92%;
+  height: 48px;
+  margin-left:24px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 2px;
+  background-color: #0E0E0E;
+  font-family: "zen-maru-gothic";
+  font-size: 1.6rem;
+  color: #ddd;
+}
+.div__form > div input::placeholder{
+  color: #999;
+}
+.div__form > div select{
+  width: 92%;
+  height: 48px;
+  margin-left:24px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 2px;
+  background-color: #0E0E0E;
+  background-image: url(../images/reserve/select_arrow.png);
+  background-position: top 19px right 16px;
+  background-repeat: no-repeat;
+  font-family: "zen-maru-gothic";
+  font-size: 1.6rem;
+  color: #999;
+}
+#reserve-date{
+  background-image: url(../images/reserve/calendar_24_white.svg);
+  background-size: 28px 28px;
+  background-position: top 9px right 12px;
+  background-repeat: no-repeat;
+}
+
+.div__form > .reserve-privacy-box{
+  margin: 0 auto 32px;
+  position: relative;
+  text-align: center;
+}
+.div__form > .reserve-privacy-box > input{
+  width: 20px;
+  height: 20px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+  .div__form .reserve-privacy-box > .small-label{
+  font-family: "zen-maru-gothic";
+  font-size: 1.4rem;
+  display: inline-block;
+  padding-left: 4px;
+}
+.div__form .reserve-button-box{
+  text-align: center;
+}
+.div__form .reserve-button{
+  color: #ddd;
+  width: 220px;
+  height: 48px;
+  margin-left: 0px;
+  padding: 10px 24px;
+  border: 2px solid #fff;
+  border-radius: 48px;
+  background-color: #0E0E0E;
+  font-family: "zen-maru-gothic";
+  font-size: 1.6rem;
+  color: #ddd;
+  outline: 2px solid rgba(255,255,255,0);
+  outline-offset: 0px;
+}
+.div__form .reserve-button:hover{
+  animation: light 1.5s infinite;
+}
+@keyframes light {
+  0%{
+    outline: 2px solid rgba(255,255,255,1);
+    outline-offset: 0px;
+    filter:
+    drop-shadow(0px 0px 3px #f80)
+    drop-shadow(0px 0px 5px #f80)
+  }
+  25% {
+    outline: 1px solid rgba(255,255,255,0);
+    outline-offset: 10px;
+    filter:
+    drop-shadow(0px 0px 5px rgba(0,0,0,0))
+  }
+  35% {
+    outline: 1px solid rgba(255,255,255,0);
+    outline-offset: 10px;
+    filter:
+    drop-shadow(0px 0px 5px rgba(0,0,0,0))
+  }
+  35.1% {
+    outline: 1px solid rgba(255,255,255,1);
+    outline-offset: 0px;
+    filter:
+    drop-shadow(0px 0px 5px #f80)
+  }
+  50% {
+    outline: 1px solid rgba(255,255,255,0);
+    outline-offset: 10px;
+    filter:
+    drop-shadow(0px 0px 5px rgba(0,0,0,0))
+  }
+  100% {
+    outline: 1px solid rgba(255,255,255,0);
+    outline-offset: 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer .reserve-button{
+    display: none;
+  }
+}
+

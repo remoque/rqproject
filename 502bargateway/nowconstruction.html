@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<meta name="description" content="クリエイターや研修者の夜通しの作業を応援するバー「502 Bar Gateway」です。">
+<meta property="og:title" content="クリエイターや研究者のための「502 Bar Gateway」">
+<meta property="og:site_name" content="502 Bar Gateway">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja-JP">
+<meta property="og:image" content="assets/images/common/ogp.jpg">
+<meta property="og:description" content="クリエイターや研修者の夜通しの作業を応援するバー「502 Bar Gateway」です。">
+<meta name="twitter:card" content="summary" >
+<meta name="format-detection" content="telephone=no">
+<title>502 Bar Gateway</title>
+
+<link href="assets/images/common/favicon.ico" rel="icon" type="image/x-icon" >
+<link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png" >
+
+<!-- *** fonts adobe web project********* -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'lri4hjo',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+<!-- *** stylesheet ********* -->
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/nowconstruction.css">
+
+<!-- *** jquery ********* -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   <!--jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="header__content">
+      <a id="top" class="top-link" href="index.html">
+      </a>
+      <input id="nav-input" class="none" type="checkbox">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label id="nav-close" class="none" for="nav-input"></label>
+      <label id="nav-close-x" class="none" for="nav-input"><span></span></label>
+      <nav id="nav-drawer" class="nav-drawer">
+        <ul>
+          <li><a id="concept_navlink" href="concept.html">コンセプト</a></li>
+          <li><a id="menu_navlink" href="menu.html">メニュー</a></li>
+          <li><a id="storelist_navlink" href="storelist.html">店舗一覧</a></li>
+          <li><a id="reserve_navlink" href="reserve.html">予約・空き</a></li>
+          <li><a id="recruit_navlink" href="recruit.html">求人情報</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+  <div id="construction_content">
+    <div id="construction-message">
+      <p class="message-body">ただいま工事中です</p>
+      <a  class="back-button__link" href='' onclick='window.history.back(); return false;'>
+        <div class = 'back-button-box'>
+          前のページに戻る
+        </div>
+      </a>
+    </div>
+    <div id="rotate-content">
+      <div id="construction-none" ></div>
+      <img id="construction-circle-outside" src="assets/images/construction/circle-inside.png" alt="インサイドサークル">
+      <img id="construction-circle-middle" src="assets/images/construction/circle-middle.png" alt="ミドルサークル">
+      <img id="construction-circle-inside" src="assets/images/construction/circle-outside.png" alt="アウトサークル">
+      </div>
+  </div>
+</main>
+<footer></footer>
+<script src="assets/js/common.js"></script>
+</body>
+</html>

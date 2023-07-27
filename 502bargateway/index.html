@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<meta name="description" content="クリエイターや研修者の夜通しの作業を応援するバー「502 Bar Gateway」です。">
+<meta property="og:title" content="クリエイターや研究者のための「502 Bar Gateway」">
+<meta property="og:site_name" content="502 Bar Gateway">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja-JP">
+<meta property="og:image" content="assets/images/common/ogp.jpg">
+<meta property="og:description" content="クリエイターや研修者の夜通しの作業を応援するバー「502 Bar Gateway」です。">
+<meta name="twitter:card" content="summary" >
+<meta name="format-detection" content="telephone=no">
+<title>502 Bar Gateway</title>
+
+<link href="assets/images/common/favicon.ico" rel="icon" type="image/x-icon" >
+<link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png" >
+
+<!-- *** fonts adobe web project********* -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'lri4hjo',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+<!-- *** stylesheet ********* -->
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/jquery.lineProgressbar.css"/>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/top.css">
+
+<!-- *** jquery ********* -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   <!--jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="assets/js/jquery.lineProgressbar.js"></script>   <!--lineprogressbar-->
+<script src="assets/slick/slick.min.js"></script>   <!--slick-->
+<script src="assets/js/top.js"></script>
+
+</head>
+<body>
+<div id="loading_content" class="none">
+  <div id="loading-pic">
+    <img id="circle-outside" src="assets/images/loading/circle-outside.png" alt="インサイドサークル">
+    <img id="circle-middle" src="assets/images/loading/circle-middle.png" alt="ミドルサークル">
+    <img id="circle-inside" src="assets/images/loading/circle-inside.png" alt="アウトサークル">
+    <img id="circle-number" src="assets/images/loading/502.png" alt="502">
+    <img id="bar-name" src="assets/images/loading/bargateway.png" alt="bar gateway">
+  </div>
+  <div id="loading_line"></div>
+</div>
+<header id="header" class="header none">
+  <div class="header__content">
+    <a id="top" class="top-link" href="index.html">
+    </a>
+    <input id="nav-input" class="none" type="checkbox">
+    <label id="nav-open" for="nav-input"><span></span></label>
+    <label id="nav-close" class="none" for="nav-input"></label>
+    <label id="nav-close-x" class="none" for="nav-input"><span></span></label>
+    <nav id="nav-drawer" class="nav-drawer">
+        <ul>
+          <li><a id="concept_navlink" href="concept.html">コンセプト</a></li>
+          <li><a id="menu_navlink" href="menu.html">メニュー</a></li>
+          <li><a id="storelist_navlink" href="storelist.html">店舗一覧</a></li>
+          <li><a id="reserve_navlink" href="reserve.html">予約・空き</a></li>
+          <li><a id="recruit_navlink" href="recruit.html">求人情報</a></li>
+        </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="main none">
+  <section class="section__concept">
+    <div class="slick__pic-box">
+      <img src="assets/images/top/drink.png" alt="カクテル">
+      <img src="assets/images/top/barcounter1.png" alt="店内風景1">
+      <img src="assets/images/top/barcounter2.png" alt="店内風景2">
+    </div>
+    <h2 class="concept__catchcopy">
+      眠れないあなたのために<span class="space-point"></span>夜に生まれる進捗は<span class="break-point__mobile"></span>酒と共にある
+    </h2>
+    <p class="concept__description">
+        夜遅くまで頑張るクリエイターや研究者のための、作業もできるバーです。<span class="break-point"></span>
+      ディスプレイを設置した作業席や大きなテーブルの席をご用意しています。
+    </p>
+    <a class="button__link" href="concept.html">
+      <div class="concept__button neon__pink-frame">
+        <p>コンセプトを見る</p>
+      </div>
+    </a>
+  </section>
+  <section class="section__menu">
+    <h2 class="neon__red-character">メニュー</h2>
+    <div class="sub-section__drink">
+      <h3>ドリンク</h3>
+      <div class="drink-menu">
+        <ul>
+          <li>
+            <div class="menu__pic">
+              <img src="assets/images/top/liquor2.png" alt="カナディアンクラブ">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">カナディアンクラブ</span><span class="menu__price">500円</span>
+              </p>
+              <p class="menu__description">キャラメルやバニラを想起させる甘い香りの中に八角のようなスパイスのアロマがほんのりと香るウイスキーです。バランスの取れた１本で、やわらかいオーク香の余韻も楽しめます。
+            </p>
+            </div>
+          </li>
+          <li>
+            <div class="menu__pic">
+              <img src="assets/images/top/liquor1.png" alt="Barterhouse 20年">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">Barterhouse 20年</span><span class="menu__price">2000円</span>
+              </p>
+              <p class="menu__description">
+                クリーミーなキャラメルやブラウンシュガー、さらにトロピカルフルーツやオールスパイスの香りを持っています。またシルキーで穏やかな飲み口で、余韻は非常に長く続きます。
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="menu__pic">
+              <img src="assets/images/top/cocktail2.png" alt="マタドール">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">マタドール</span><span class="menu__price">500円</span>
+              </p>
+              <p class="menu__description">カクテル名はスペイン語で闘牛士を意味し、テキーラをパイナップルジュースとライムジュースで割ったカクテルです。やや甘口でフルーティーながらもテキーラの風味が感じられる一杯です。
+            </p>
+            </div>
+          </li>
+          <li>
+            <div class="menu__pic">
+              <img src="assets/images/top/cocktail3.png" alt="コルコバード">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">コルコバード</span><span class="menu__price">500円</span>
+              </p>
+              <p class="menu__description">
+                ドランブイの甘いはちみつとハーブの香りとテキーラの独特の香りが織り成す南国の海を思わす青のカクテルです。クラッシュアイスとソーダが爽やかさを演出しています。
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="menu__pic">
+              <img src="assets/images/top/cocktail1.png" alt="コスモポリタン">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">コスモポリタン</span><span class="menu__price">500円</span>
+              </p>
+              <p class="menu__description">クランベリーの甘味と酸味にウォッカのキリッと引締まった味がするピンク色のカクテルです。甘すぎず、度数も高めなのでちょっぴり大人な雰囲気を味わいたい方におすすめです。
+            </p>
+            </div>
+          </li>
+          <li>
+            <div class="menu__pic">
+              <img src="assets/images/top/nonalcohol.png" alt="ヴァージンブリーズ">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">ヴァージンブリーズ</span><span class="menu__price">500円</span>
+              </p>
+              <p class="menu__description">クランベリージュースとグレープフルーツジュースのさっぱりとした酸味がスッキリとした味わいを演出します。シーブリーズからウォッカを抜いた、甘過ぎない大人のためのノンアルコールカクテルです。
+            </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a class="button__link" href="menu.html">
+        <div class="menu__button neon__red-frame">
+          <p>もっと見る</p>
+        </div>
+      </a>
+    </div>
+    <div class="sub-section__food">
+      <h3>フード</h3>
+      <div class="food-menu">
+        <ul>
+          <li class="regular">
+            <div class="menu__pic">
+              <img src="assets/images/top/specialset.png" alt="スペシャル盛り合わせ">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">スペシャル盛り</span><span class="menu__price">1000円</span>
+              </p>
+              <p class="menu__description">
+                チーズ３種類、生ハム３種類にクラッカーと果物の盛り合わせで、ボリューム満点のおつまみです。複数人でのシェアや自分へのご褒美としておすすめです。
+            </p>
+            </div>
+          </li>
+          <li class="regular">
+            <div class="menu__pic">
+              <img src="assets/images/top/tamagokakegohan.png" alt="卵かけご飯">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">卵かけご飯</span><span class="menu__price">300円</span>
+              </p>
+              <p class="menu__description">
+                夜を明かすための夜食や飲みの終わりの締めとしておすすめの卵かけご飯です。熱々のご飯に新鮮な卵をのせて、醤油をかけてお楽しみください。
+              </p>
+            </div>
+          </li>
+          <li class="regular">
+            <div class="menu__pic">
+              <img src="assets/images/top/breakfast.png" alt="スープ&サラダ">
+            </div>
+            <div class="menu__body">
+              <p class="menu__name-price">
+                <span class="menu__name">スープ&サラダ</span><span class="menu__price">600円</span>
+              </p>
+              <p class="menu__description">
+                トマトベースのマカロニスープに、ベーコンと目玉焼きを添えたサラダの朝食セットです。優しい味が夜明けの体に染み渡ります。
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a class="button__link" href="menu.html">
+        <div class="menu__button neon__red-frame">
+          <p>もっと見る</p>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="section__store-list">
+    <h2 class="neon__orange-character">店舗一覧</h2>
+    <ul>
+      <li>
+        <div class="store__body">
+          <h3 class="store__name">
+            <a href="storedetail.html">
+              新宿店
+            </a>
+          </h3>
+          <address>
+            住所：東京都新宿区新宿3-38-1<br>
+          </address>
+          <p>電話番号：<a href="">XX-XXXX-XXXX</a></p>
+        </div>
+        <div class="map">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6480.981868285192!2d139.68775029429742!3d35.68953480421677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2z5paw5a6_6aeF!5e0!3m2!1sja!2spt!4v1687461404317!5m2!1sja!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </li>
+      <li>
+        <div class="store__body">
+          <h3 class="store__name">
+            <a href="storedetail.html">
+              渋谷店
+            </a>
+          </h3>
+          <address>
+            住所：東京都渋谷区渋谷2-21-13<br>
+          </address>
+          <p>電話番号：<a href="">XX-XXXX-XXXX</a></p>
+        </div>
+        <div class="map-box">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7265902279196!2d139.699358475746!3d35.65910728118913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2z5riL6LC36aeF!5e0!3m2!1sja!2spt!4v1687461610253!5m2!1sja!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </li>
+      <li>
+        <div class="store__body">
+          <h3 class="store__name">
+            <a href="storedetail.html">
+              高田馬場店
+            </a>
+          </h3>
+          <address>
+            住所：東京都新宿区高田馬場1-35-2<br>
+          </address>
+          <p>電話番号：<a href="">XX-XXXX-XXXX</a></p>
+        </div>
+        <div class="map-box">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.55488230234!2d139.7012865757481!3d35.71256972825196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d399ddaa763%3A0x954afc3e292c9a7e!2z6auY55Sw6aas5aC06aeF!5e0!3m2!1sja!2spt!4v1687461823196!5m2!1sja!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </li>
+      <li>
+        <div class="store__body">
+          <h3 class="store__name">
+            <a href="storedetail.html">
+              御茶ノ水店
+            </a>
+          </h3>
+          <address>
+            住所：東京都千代田区神田駿河台2-6<br>
+          </address>
+          <p>電話番号：<a href="">XX-XXXX-XXXX</a></p>
+        </div>
+        <div class="map-box">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.2994837541337!2d139.76176708999037!3d35.6997173640845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c19eafeb779%3A0xf69f1e715e53cb1f!2z5b6h6Iy244OO5rC06aeF!5e0!3m2!1sja!2spt!4v1687461951461!5m2!1sja!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </li>
+      <li>
+        <div class="store__body">
+          <h3 class="store__name">
+            <a href="storedetail.html">
+              本郷三丁目店
+            </a>
+          </h3>
+          <address>
+            住所：東京都文京区本郷2-39-1<br>
+          </address>
+          <p>電話番号：<a href="">XX-XXXX-XXXX</a></p>
+        </div>
+        <div class="map-box">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.760497587836!2d139.7578610757479!3d35.707510928530006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c3b810c902f%3A0xdf626fb535ceaf0c!2z5pys6YO35LiJ5LiB55uu6aeF!5e0!3m2!1sja!2spt!4v1687462176715!5m2!1sja!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </li>
+      <li>
+        <div class="store__body">
+          <h3 class="store__name">
+            <a href="storedetail.html">
+              明大前店
+            </a>
+          </h3>
+          <address>
+            住所：東京都世田谷区松原2-45<br>
+          </address>
+          <p>電話番号：<a href="">XX-XXXX-XXXX</a></p>
+        </div>
+        <div class="map-box">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.377401962679!2d139.6479884757464!3d35.667708180716716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f3078a4992df%3A0xc09fbf5d8c170111!2z5piO5aSn5YmN6aeF!5e0!3m2!1sja!2spt!4v1687462254591!5m2!1sja!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </li>
+    </ul>
+    <a class="button__link" href="storelist.html">
+      <div class="store-list__button neon__orange-frame">
+          <p>もっと見る</p>
+      </div>
+    </a>
+  </section>
+  <section class="section__news">
+    <h2 class="neon__yellow-character">お知らせ</h2>
+    <ol>
+      <li>
+        <div class="news__title">
+          <p class="neon__yellow-under">年末年始の休業：全店：<time datetime="2000-01-01">2022/12/14</time></p>
+        </div>
+        <p class="news__body">
+          全店、<time datetime="2022-12-29">12月29日</time>〜<time datetime="2023-01-03">1月3日</time>は年末年始の休業をいただきます。
+        </p>
+      </li>
+      <li>
+        <div class="news__title">
+          <p class="neon__yellow-under">新店舗の開店：明治前店：<time datetime="2022-07-10">2022/11/10</time></p>
+        </div>
+        <p class="news__body">
+          <time datetime="2022-11-21">11月21日</time>に、新店舗として<a href="">明治前店</a>を開店します。
+        </p>
+      </li>
+      <li>
+        <div class="news__title">
+          <p class="neon__yellow-under">臨時休業のお知らせ：渋谷店・新宿店：<time datetime="2022-10-16">2022/10/16</time></p>
+        </div>
+        <p class="news__body">
+          渋谷店・新宿店は<time datetime="2022-10-30">10月30日</time>、<time datetime="2022-10-31">31日</time>は休業させていただきます。
+        </p>
+      </li>
+      <li>
+        <div class="news__title">
+          <p class="neon__yellow-under">新メニュー：全店：<time datetime="2022-01-20">2022/01/20</time></p>
+        </div>
+        <p class="news__body">
+          <time datetime="2022-02-01">2月1日</time>から新メニュー「カレーライス」を夜食として全店で提供開始します。
+        </p>
+      </li>
+    </ol>
+  </section>
+</main>
+<footer id="footer" class="footer none">
+  <div class="footer__content">
+    <a class="top-link" href="index.html">
+      <img class="footer__nav-top" src="assets/images/footer/footer_502_PC.png" alt="502 Bar Gateway">
+    </a>
+    <div class="sns">
+      <ul>
+        <li>
+          <a href=""><img src="assets/images/footer/Twittersocialicons-roundedsquare-white.png" alt="Twitterアイコン"></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/images/footer/Instagram_Glyph_White.png" alt="Instagramアイコン"></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/images/footer/f_logo_RGB-White.png" alt="Facebookアイコン"></a>
+        </li>
+      </ul>
+    </div>
+    <nav class="footer__nav">
+      <ul class="nav-up">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="concept.html">コンセプト</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+      </ul>
+      <ul class="nav-down">
+        <li><a href="storelist.html">店舗一覧</a></li>
+        <li><a  href="reserve.html">予約・空き</a></li>
+        <li><a href="recruit.html">求人情報</a></li>
+      </ul>
+    </nav>
+    <small><a href="nowconstruction.html">プライバシーポリシー・利用規約</a></small>
+    <small>©502 Bar Gateway All Rights Reserved.</small>
+  </div>
+  <div id="footer__button-wrap">
+    <a id="footer-button__link" class="button__link" href="reserve.html">
+      <div id="footer__reserve-button" class="reserve-button">
+        <p>空き・予約</p>
+      </div>
+    </a>
+  </div>
+  <div id="arrow-top" class="arrow-top-wrap none">
+    <a class="arrow-top" href="#top"><span class="arrow"></span></a>
+  </div>
+  </footer>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/slick_exe.js"></script>
+</body>
+</html>

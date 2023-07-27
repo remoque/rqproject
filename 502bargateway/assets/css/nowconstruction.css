@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main{
+  max-width: 1440px;
+  margin: 10px auto 0;
+}
+/* メッセージ部分 */
+#construction-message{
+  margin: 20vh auto 0px;
+  width: 280px;
+}
+.message-body{
+  margin: 0 auto;
+  font-family: "ta-oonishi";
+  font-size: 3.0rem;
+}
+.message-body::after{
+  background-color: #fff;
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  filter:
+    drop-shadow(0px 0px 2px #f0f)
+    drop-shadow(0px 0px 2px #09f)
+    drop-shadow(0px 0px 2px #09f)
+    drop-shadow(0px 0px 5px #90f)
+    drop-shadow(0px 0px 15px #09f);
+  animation: move-underline 6s linear infinite;
+}
+@keyframes move-underline {
+  0% {
+    transform: translateX(-300%) scale(0);
+  }
+  39% {
+    transform: translateX(-300%) scale(0);
+  }
+  40%{
+    transform: translateX(-300%) scale(0.7);
+  }
+  50% {
+    transform: translateX(1400%) scale(1.2);
+  }
+  70% {
+    transform: translateX(5500%) scale(0);
+  }
+  73% {
+    transform: translateX(5500%) scale(0);
+  }
+  77% {
+    transform: translateX(5500%) scale(1);
+  }
+  81% {
+    transform: translateX(5500%) scale(0);
+  }
+  100% {
+    transform: translateX(5500%) scale(0);
+  }
+
+}
+
+/* 前のページに戻るボタン */
+.back-button__link{
+  display: block;
+  margin: 20px auto 0;
+  width: 180px;
+}
+.back-button-box{
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 20px;
+  position: relative;
+}
+.back-button-box::after{
+  display: block;
+  width: 180px;
+  height: 36px;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.back-button__link:hover{
+  opacity: 1;
+}
+.back-button__link:hover .back-button-box::after {
+  animation: light 1.5s infinite;
+}
+@keyframes light {
+  0%{
+    transform: scale(1.0);
+    filter:
+    drop-shadow(0px 0px 2px #f0f)
+    drop-shadow(0px 0px 2px #09f)
+    drop-shadow(0px 0px 5px #90f)
+    drop-shadow(0px 0px 15px #09f);
+  }
+  60% {
+    transform: scale(1.1, 1.45);
+    opacity: 0;
+    filter:
+    drop-shadow(0px 0px 2px #f0f)
+    drop-shadow(0px 0px 2px #09f)
+    drop-shadow(0px 0px 5px #90f)
+    drop-shadow(0px 0px 15px #09f);
+  }
+  100% {
+    transform: scale(1.1, 1.45);
+    opacity: 0;
+  }
+}
+
+/* 動く輪っか部分 */
+#construction-circle-inside, #construction-circle-middle, #construction-circle-outside, #construction-none{
+  margin: 0 ;
+  position: fixed;
+  bottom: -150px;
+  right: -150px;
+  object-fit: contain;
+  object-position: center;
+}
+#construction-none{
+  z-index: 99999;
+  width: 400px;
+  height:400px;
+  background-color: rgba(255,255,255,0.0);
+}
+#construction-circle-outside{
+  z-index: 99;
+  animation: rote-outside 16s linear infinite;
+}
+@keyframes rote-outside {
+  0% {
+    transform: rotate3d(0,0,1,0deg);
+  }
+  100% {
+    transform: rotate3d(0,0,1,360deg);
+  }
+}
+#construction-circle-middle{
+  z-index: 999;
+  animation: rote-middle 12s linear infinite;
+}
+@keyframes rote-middle {
+  0% {
+    transform: rotate3d(0,0,1,0deg);
+  }
+  100% {
+    transform: rotate3d(0,0,1,-360deg);
+  }
+}
+#construction-circle-inside{
+  z-index: 9999;
+  animation: rote-inside 14s linear infinite;
+}
+@keyframes rote-inside {
+  0% {
+    transform: rotate3d(0,0,1,0deg);
+  }
+  100% {
+    transform: rotate3d(0,0,1,360deg);
+  }
+}

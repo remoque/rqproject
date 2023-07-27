@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.section__store-list{
+  margin: 20px 0 80px;
+}
+.section__store-list ul li{
+  position: relative;
+}
+.section__store-list ul li .store-state{
+  width: 60px;
+  height: 32px;
+  border-radius: 60px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 32px;
+  right: 24px;
+}
+/* ↑↑ 現在の空席情報を反映してフレームの色と、文字を切り替えたい。phpが必要,もしくはjsでなんちゃって現在の空席情報ファイルを作ってそれっぽいことをできるようにする必要がある。*/
+.section__store-list ul li .store-state p{
+  padding: 6px 4px;
+  line-height: 1.0;
+  text-align: center;
+}
+
+.store-state-time{
+  font-size: 1.4rem;
+  text-align: center;
+  padding-left: 24px;
+}
+/* ↑↑ 実運用では更新時間を変更するjsの記述が必要。また自動で最新状態に更新する仕組みが必要。実際には外部サービスを使って連携するのか、自分で組むのかなどどう運用するかの検討が必要な箇所*/
+
+
+
+
+

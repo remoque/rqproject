@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+<meta name="description" content="クリエイターや研修者の夜通しの作業を応援するバー「502 Bar Gateway」です。">
+<meta property="og:title" content="クリエイターや研究者のための「502 Bar Gateway」">
+<meta property="og:site_name" content="502 Bar Gateway">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja-JP">
+<meta property="og:image" content="assets/images/common/ogp.jpg">
+<meta property="og:description" content="クリエイターや研修者の夜通しの作業を応援するバー「502 Bar Gateway」です。">
+<meta name="twitter:card" content="summary" >
+<meta name="format-detection" content="telephone=no">
+<title>502 Bar Gateway</title>
+
+<link href="assets/images/common/favicon.ico" rel="icon" type="image/x-icon" >
+<link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png" >
+
+<!-- *** fonts adobe web project********* -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'lri4hjo',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+<!-- *** stylesheet ********* -->
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+<link rel="stylesheet" href="assets/css/common.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+
+<!-- *** jquery ********* -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   <!--jquery-->
+<script src="assets/slick/slick.min.js"></script>   <!--slick-->
+<script src="assets/js/common.js"></script>
+
+</head>
+<body>
+<header class="header">
+  <div class="header__content">
+    <a id="top" class="top-link" href="index.html">
+    </a>
+    <input id="nav-input" class="none" type="checkbox">
+    <label id="nav-open" for="nav-input"><span></span></label>
+    <label id="nav-close" class="none" for="nav-input"></label>
+    <label id="nav-close-x" class="none" for="nav-input"><span></span></label>
+    <nav id="nav-drawer" class="nav-drawer">
+        <ul>
+          <li><a id="concept_navlink" href="concept.html">コンセプト</a></li>
+          <li><a id="menu_navlink" href="menu.html">メニュー</a></li>
+          <li><a id="storelist_navlink" href="storelist.html">店舗一覧</a></li>
+          <li><a id="reserve_navlink" href="reserve.html">予約・空き</a></li>
+          <li><a id="recruit_navlink" href="recruit.html">求人情報</a></li>
+        </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+<div class="div__link">
+  <nav class="nav__menu-link">
+    <a href="#section__drink" class="drink-link neon__red-under">ドリンク</a>
+    <a href="#section__food" class="food-link neon__purple-under">フード</a>
+    <a href="#section__plan" class="plan-link neon__sky-under">プラン</a>
+  </nav>
+</div>
+<section id="section__drink" class="section__drink">
+  <h2 class="neon__red-character">ドリンク</h2>
+  <div class="section__drink-content">
+    <div class="drink-whisky menu-body">
+      <h3 class="menu-title neon__red-under">ウイスキー</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">ジムビーム</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ジャックダニエル</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">カナディアン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ジェムソン 12年</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">オールド グランダッド</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">知多</span><span class="menu__price">700円</span></li>
+        <li><span class="menu__name">山崎</span><span class="menu__price">700円</span></li>
+        <li><span class="menu__name">クラガンモア 12年</span><span class="menu__price">800円</span></li>
+        <li><span class="menu__name">マッカラン 12年</span><span class="menu__price">900円</span></li>
+        <li><span class="menu__name">Barterhouse 20年</span><span class="menu__price">1000円</span></li>
+      </ul>
+    </div>
+    <div class="drink-brandy menu-body">
+      <h3 class="menu-title neon__red-under">ブランデー</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">カミュ ボルドリーVSOP</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ヘネシー V.S</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">バロン オタール XO</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">ブラーグランソラージュ</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">マーテル コルドンブルー</span><span class="menu__price">800円</span></li>
+      </ul>
+    </div>
+    <div class="drink-otherliquor1 menu-body">
+      <h3 class="menu-title neon__red-under">その他洋酒</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">シロック (ウォッカ)</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">ヘンドリックス (ジン)</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">ROKUジン (ジン)</span><span class="menu__price">700円</span></li>
+        <li><span class="menu__name">バカルディ スペリオール (ラム)</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">パトロン アネホ (テキーラ)</span><span class="menu__price">700円</span></li>
+      </ul>
+    </div>
+    <div class="drink-otherliquor2 menu-body menu-pic no-title">
+      <h3 class="menu-title">　</h3>
+      <div class="slick__pic-box">
+        <img class="drink-pic" src="assets/images/menu/liquor2.png" alt="カナディアンクラブ">
+        <img class="drink-pic" src="assets/images/menu/liquor1.png" alt="ジムビーム">
+        <img class="drink-pic" src="assets/images/menu/whiskey1.png" alt="山崎">
+        <img class="drink-pic" src="assets/images/menu/whiskey2.png" alt="Barterhouse 20年">
+      </div>
+    </div>
+    <div class="drink-cocktail-vodka1 menu-body menu-pic">
+      <h3 class="menu-title neon__red-under">カクテル (ウォッカ)</h3>
+      <div class="slick__pic-box">
+        <img class="drink-pic" src="assets/images/menu/cocktail_vodka3.png" alt="ブルーラグーン">
+        <img class="drink-pic" src="assets/images/menu/cocktail_vodka2.png" alt="ゴッドマザー">
+        <img class="drink-pic" src="assets/images/menu/cocktail_pink.png" alt="コスモポリタン">
+      </div>
+    </div>
+    <div class="drink-cocktail-vodka2 menu-body no-title">
+      <h3 class="menu-title">　</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">ウォッカマティーニ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">カミカゼ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">コスモポリタン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ゴッドマザー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">シーブリーズ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ソルティドッグ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ソルトリック</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ツァリーヌ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">バラライカ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブラックルシアン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブラッディメアリー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブルーラグーン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">モスコミュール</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-jin1 menu-body">
+      <h3 class="menu-title neon__red-under">カクテル (ジン)</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">アラウンド・ザ・ワールド</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">アラスカ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">アレキサンダーズシスター</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">エルドール</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">オレンジブロッサム</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ギムレット</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">グリーンアラスカ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">桜マティーニ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">シンガポールスリング</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ジントニック</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ジンバック</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ジンフィズ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">スプリングオペラ</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-jin2 menu-body no-title">
+      <h3 class="menu-title">　</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">ネグローニ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">パラダイス</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">パリジャン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ピンクレディ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">プリンセスメアリー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブルームーン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ホワイトレディ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">マティーニ</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-rum1 menu-body">
+      <h3 class="menu-title neon__red-under">カクテル (ラム)</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">アカプルコ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">XYZ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">カリビアン・ドリーム</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">キューバリバー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">コルコバード</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ジャックター</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">スカイダイビング</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">スコーピオン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ソルクバーノ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ダイキリ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ネバダ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ハバナビーチ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">パナマ</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-rum2 menu-body no-title">
+      <h3 class="menu-title">　</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">ピニャコラーダ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブルーハワイ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ボストンクーラー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">モヒート</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-tequila1 menu-body">
+      <h3 class="menu-title neon__red-under">カクテル (テキーラ)</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">アイスブレーカー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">エルディアブロ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">カクタスフラワー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">コルコバード</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">コンチータ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ジキル博士</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">テキーラサンライズ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブルーマルガリータ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">フローズンマルガリータ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブロードウェイサースト</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">マタドール</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">マルガリータ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">モッキンバード</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-tequila2 menu-body menu-pic no-title">
+      <h3 class="menu-title">　</h3>
+      <div class="slick__pic-box">
+        <img class="drink-pic" src="assets/images/menu/koruko.png" alt="コルコバード">
+        <img class="drink-pic" src="assets/images/menu/matadoll.png" alt="マタドール">
+        <img class="drink-pic" src="assets/images/menu/cocktail_purple.png" alt="テキーラベースのオリジナルカクテル">
+      </div>
+    </div>
+    <div class="drink-cocktail-whiskey1 menu-body menu-pic">
+      <h3 class="menu-title neon__red-under">カクテル (ウイスキー)</h3>
+      <div class="slick__pic-box">
+        <img class="drink-pic" src="assets/images/menu/cocktail_double.png" alt="アイリッシュローズ">
+        <img class="drink-pic" src="assets/images/menu/cocktail2.png" alt="マンハッタン">
+      </div>
+    </div>
+    <div class="drink-cocktail-whiskey2 menu-body no-title">
+      <h3 class="menu-title">　</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">アイリッシュローズ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">アルカポネ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">インペリアルフィズ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">オールドファッションド</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ゴッドファーザー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ドライマティーニ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ハイランドクーラー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ハンター</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ペニシリン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">マミーテーラー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">マンハッタン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ラスティネイル</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">レッドカトレア</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-brandy1 menu-body">
+      <h3 class="menu-title neon__red-under">カクテル (ブランデー)</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">アップルジャック</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">アレキサンダー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ベルエール</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">オリンピック</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">キャロル</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">コープスリバイバーNo.1</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">サイドカー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ジャックローズ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">スティンガー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ダーティーマザー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">チェリーブロッサム</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ニコラシカ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ハーバードクーラー</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-brandy2 menu-body no-title">
+      <h3 class="menu-title">　</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">B＆B</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ビトゥイーンザシーツ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブラーバック</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブランデーサワー</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">フレンチコネクション</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ホーセズネック</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-cocktail-other menu-body">
+      <h3 class="menu-title neon__red-under">カクテル (その他)</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">アップルロワイアル</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">キール</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">キールロワイヤル</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ミドリミモザ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">レッドアイ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">シャンディガフ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">カーディナル</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">バティーダデカカオ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">パナシェ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ブルーカイピリーニャ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ベリーニ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ヴェネチアンサンセット</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ワインクーラー</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-other-alcohol menu-body">
+      <h3 class="menu-title neon__red-under">その他のドリンク</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">ビール</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">赤ワイン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">白ワイン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ロゼ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">スパークリングワイン</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">梅酒</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">みかん酒</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">シードル</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-non-alcohol1 menu-body">
+      <h3 class="menu-title neon__red-under">ノンアルコールドリンク</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">水 (炭酸有り・無し)</span><span class="menu__price">300円</span></li>
+        <li><span class="menu__name">コーヒー (ホット・アイス)</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">カフェオレ (ホット・アイス)</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">紅茶 (ホット・アイス)</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">緑茶 (ホット・アイス)</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">ジュース </span><span class="menu__price"></span></li>
+        <li><span class="menu__name">　(オレンジ・りんご・パイン)
+          </span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">レモネード</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">シャーリーテンプル</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">シンデレラ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ヴァージンピニャコラーダ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ヴァージンブリーズ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">サマーデライト</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="drink-non-alcohol2 menu-body menu-pic no-title">
+      <h3 class="menu-title">　</h3>
+      <div class="slick__pic-box">
+        <img class="drink-pic" src="assets/images/menu/cafeole.png" alt="カフェオレ">
+        <img class="drink-pic" src="assets/images/menu/nonalcohol1.png" alt="アイスレモン紅茶">
+        <img class="drink-pic" src="assets/images/menu/nonalcohol2.png" alt="ヴァージンブリーズ">
+        <img class="drink-pic" src="assets/images/menu/nonalcohol3.png" alt="サマーデライト">
+        <img class="drink-pic" src="assets/images/menu/tea.png" alt="ホット紅茶">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section__food" class="section__food">
+  <h2 class="neon__purple-character">フード</h2>
+  <div class="section__food-content">
+    <div class="food-appetizer1 menu-body">
+      <h3 class="menu-title neon__purple-under">おつまみ</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">ナッツの盛り合わせ</span><span class="menu__price">300円</span></li>
+        <li><span class="menu__name">チーズの盛り合わせ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">生ハムの盛り合わせ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">果物の盛り合わせ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ドライフルーツの盛り合わせ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">チーズ・生ハムの盛り合わせ</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">スペシャル盛り合わせ</span><span class="menu__price">1000円</span></li>
+      </ul>
+    </div>
+    <div class="food-appetizer2 menu-body no-title">
+      <h3 class="menu-title">　</h3>
+      <ul class="menu-list">
+        <li class="no-margin"><span class="menu__name">アイスクリーム</span><span class="menu__price"></span></li>
+        <li><span class="menu__name">　(バニラ・チョコレート)</span><span class="menu__price">300円</span></li>
+        <li><span class="menu__name">おかきの盛り合わせ</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">チョコレートの盛り合わせ</span><span class="menu__price">500円</span></li>
+        <li class="no-margin"><span class="menu__name">ポテトチップス</span><span class="menu__price"></span></li>
+        <li><span class="menu__name">　(塩・のり塩・ビネガー・ピザ)</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">焼き菓子の盛り合わせ</span><span class="menu__price">500円</span></li>
+      </ul>
+    </div>
+    <div class="food-appetizer3 menu-body menu-pic no-title">
+      <h3 class="menu-title">　</h3>
+      <div class="slick__pic-box">
+        <img class="food-pic" src="assets/images/menu/specialset.png" alt="スペシャル盛り">
+        <img class="food-pic" src="assets/images/menu/hamset.png" alt="ハムの盛り合わせ">
+        <img class="food-pic" src="assets/images/menu/fruitset.png" alt="フルーツ盛り合わせ">
+        <img class="food-pic" src="assets/images/menu/cheesehumset.png" alt="チーズとハムの盛り合わせ">
+      </div>
+    </div>
+    <div class="food-appetizer4 menu-body no-title">
+      <h3 class="menu-title">　</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">焼き鳥缶</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">ホタテ缶</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">サバ缶</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">コンビーフ缶</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">しぐれ煮缶</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">白ごはん</span><span class="menu__price">200円</span></li>
+      </ul>
+    </div>
+    <div class="food-yashoku1 menu-body">
+      <h3 class="menu-title neon__purple-under">夜食</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">卵かけご飯</span><span class="menu__price">300円</span></li>
+        <li><span class="menu__name">カレーライス</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">牛丼</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">ラーメン</span><span class="menu__price"></span></li>
+        <li class="no-margin"><span class="menu__name">　(豚骨・味噌・塩・醤油)</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">味噌汁</span><span class="menu__price">100円</span></li>
+      </ul>
+    </div>
+    <div class="food-yashoku2 menu-body menu-pic no-title">
+      <h3 class="menu-title">　</h3>
+      <div class="slick__pic-box">
+        <img class="food-pic" src="assets/images/menu/ramen.png" alt="ラーメン">
+        <img class="food-pic" src="assets/images/menu/curry.png" alt="カレー">
+        <img class="food-pic" src="assets/images/menu/tamagokake.png" alt="卵がけご飯">
+        <img class="food-pic" src="assets/images/menu/gyudon.png" alt="牛丼">
+      </div>
+    </div>
+    <div class="food-breakfast1 menu-body">
+      <h3 class="menu-title neon__purple-under">朝食</h3>
+      <ul class="menu-list">
+        <li><span class="menu__name">目玉焼きトースト</span><span class="menu__price">400円</span></li>
+        <li><span class="menu__name">フレンチトースト</span><span class="menu__price">500円</span></li>
+        <li><span class="menu__name">卵がけご飯</span><span class="menu__price">300円</span></li>
+        <li><span class="menu__name">お茶漬け</span><span class="menu__price">300円</span></li>
+        <li><span class="menu__name">アボカド卵サラダパン</span><span class="menu__price">600円</span></li>
+        <li><span class="menu__name">マカロニスープ＆サラダ</span><span class="menu__price">600円</span></li>
+      </ul>
+    </div>
+    <div class="food-breakfast2 menu-body menu-pic no-title">
+      <h3 class="menu-title">　</h3>
+      <div class="slick__pic-box">
+        <img class="food-pic" src="assets/images/menu/breakfast1.png" alt="マカロニスープ&サラダ">
+        <img class="food-pic" src="assets/images/menu/abocado.png" alt="アボカド卵サラダパン">
+        <img class="food-pic" src="assets/images/menu/tamagokake.png" alt="卵がけご飯">
+        <img class="food-pic" src="assets/images/menu/toast.png" alt="目玉焼きトースト">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section__plan" class="section__plan">
+  <h2 class="neon__sky-character">プラン</h2>
+  <div class="section__plan-content">
+    <div class="hour3">
+      <h3 class="plan-title neon__sky-under">3時間プラン</h3>
+      <p class="plan-description">
+        作業席のチャージ量(500円/時間)と500円以内のドリンク１杯のセットプランです。
+      </p>
+      <p class="plan__price">
+        …… 1500円
+      </p>
+    </div>
+    <div class="hour6">
+      <h3 class="plan-title neon__sky-under">6時間プラン</h3>
+      <p class="plan-description">
+        作業席のチャージ量(500円/時間)と500円以内のドリンク２杯のセットプランです。
+      </p>
+      <p class="plan__price">
+        ……  3000円
+      </p>
+    </div>
+    <div class="day1">
+      <h3 class="plan-title neon__sky-under">1日プラン</h3>
+      <p class="plan-description">
+        作業席のチャージ量(500円/時間)、500円以内のドリンク２杯、600円以内のフード１品のセットプランです。
+      </p>
+      <p class="plan__price">
+        ……  5000円
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer__content">
+    <a class="top-link" href="index.html">
+      <img class="footer__nav-top" src="assets/images/footer/footer_502_PC.png" alt="502 Bar Gateway">
+    </a>
+    <div class="sns">
+      <ul>
+        <li>
+          <a href=""><img src="assets/images/footer/Twittersocialicons-roundedsquare-white.png" alt="Twitterアイコン"></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/images/footer/Instagram_Glyph_White.png" alt="Instagramアイコン"></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/images/footer/f_logo_RGB-White.png" alt="Facebookアイコン"></a>
+        </li>
+      </ul>
+    </div>
+    <nav class="footer__nav">
+      <ul class="nav-up">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="concept.html">コンセプト</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+      </ul>
+      <ul class="nav-down">
+        <li><a href="storelist.html">店舗一覧</a></li>
+        <li><a  href="reserve.html">予約・空き</a></li>
+        <li><a href="recruit.html">求人情報</a></li>
+      </ul>
+    </nav>
+    <small><a href="nowconstruction.html">プライバシーポリシー・利用規約</a></small>
+    <small>©502 Bar Gateway All Rights Reserved.</small>
+  </div>
+  <div id="footer__button-wrap">
+    <a id="footer-button__link" class="button__link" href="reserve.html">
+      <div id="footer__reserve-button" class="reserve-button">
+        <p>空き・予約</p>
+      </div>
+    </a>
+  </div>
+  <div id="arrow-top" class="arrow-top-wrap none">
+    <a class="arrow-top" href="#top"><span class="arrow"></span></a>
+  </div>
+</footer>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/slick_exe.js"></script>
+</body>
+</html>
