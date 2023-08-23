@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+/*
+  box-sizing: border-box;
+*/
+  /* box-sizingの値は子要素に継承されないのでこの記法は意味ないと思われる。
+  全部に指定したい場合は、例えば、body *{ box-sizing: border-box; }
+  親要素から継承したい場合は、以下のように記述で継承できる。inheritが親要素から継承するという設定。
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  */
+}
+*, *:before, *:after{
+  box-sizing: border-box; 
+}
+body {
+  color: #333;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 2.4rem;
+  text-align: center;
+}
+section h2 {
+  font-size: 3.0rem;
+}
+a:hover {
+  opacity: 0.5;
+}
+.none{
+  display: none;
+}
