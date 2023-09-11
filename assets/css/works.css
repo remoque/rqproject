@@ -1,0 +1,60 @@
+.header__background{
+  background-image: url("../images/works/bg_wpage.png");
+  background-position: top;
+  background-size:  auto;
+  background-repeat: repeat-x;
+}
+.header{
+  background-image: none;
+}
+.works{
+  margin-bottom: 180px;
+}
+.filter__btn{
+  margin: 20px auto 40px;
+  padding-left: 50px;
+  text-align: left;
+}
+.filter__btn input{
+  display: none;
+}
+.filter__btn label{
+  margin: 0 4px;
+  padding: 4px 10px;
+  color: #333;
+  font-size: 1.4rem;
+  text-decoration: none;
+  border: solid 1px #e478e4;
+  border-radius: 20px;
+}
+.filter__btn label:hover{
+  opacity: 0.5;
+}
+.filter__btn input:checked + label.all,
+.filter__btn input:checked + label.illust,
+.filter__btn input:checked + label.logo,
+.filter__btn input:checked + label.homepage {
+  background-color: #f3ebf4;
+}
+
+.filter__btn div{
+  display: inline-block;
+  margin: 0 8px;
+}
+.works__description h3{
+}
+.works__description h3 span{
+  padding: 0 1px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  /* border-bottom: solid 2px #e478e4; */
+}
+.works__description h3 span::after{
+  content: "";
+  display: block;
+  height: 1.5px;
+  background-color: #e478e4;
+  border-radius: 2px;
+}

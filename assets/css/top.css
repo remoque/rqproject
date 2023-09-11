@@ -16,15 +16,23 @@
   position: relative;
   padding:26px 0px 27px 0px;
 }
-.header__navigation h1{
+.header__navigation h1 a{
   font-family: "vdl-penletter", sans-serif;
   font-weight: 700;
   font-size: 3.2rem;
   color: #9f9e18;
   position: absolute;
-  top: 27px;
+  top: 10px;
   left: 10px;
+  text-decoration: none;
 }
+.header__navigation h1 a img{
+  object-fit: contain;
+  object-position: center;
+  width: 256px;
+  height: 54.4px;
+}
+
 .header__navigation ul{
   margin-right: 10px;
 }
@@ -40,7 +48,7 @@
   color: #333333;
 }
 .header__navigation ul li a:visited{
-  color: #333333;  
+  color: #333333;
 }
 .header__navigation ul li a:hover{
   color: #333333;
@@ -75,7 +83,7 @@
 .header__top-description {
   max-width:1040px;
   margin: 0 auto ;
-  padding-bottom: 25px; 
+  padding-bottom: 25px;
 }
 .header__top-description p{
   font-family: "vdl-penletter", sans-serif;
@@ -112,12 +120,16 @@
     position: relative;
     padding: 5px 0px 10px 0px;
   }
-  .header__navigation h1{
+  .header__navigation h1 a {
     font-size: 1.8rem;
     color: #9f9e18;
     position: absolute;
-    top: 5px;
+    top: 1px;
     left: 5px;
+  }
+  .header__navigation h1 a img{
+    width: 160px;
+    height: 34px;
   }
   .header__top-image{
     max-width: 768px;
@@ -218,9 +230,6 @@
     display: block;
     margin-left: 0px;
   }
-  #drawer__link-top{
-    display: block;
-  }
   .header__navigation ul li a{
     font-family: "vdl-v7marugothic", sans-serif;
     font-weight: 600;
@@ -273,7 +282,7 @@
   text-align: left;
 }
 .about__description {
-  padding-bottom:40px;  
+  padding-bottom:40px;
 }
 .about__description p{
   text-align: left;
@@ -303,7 +312,7 @@
 }
 /*ラベルに表示するテキスト*/
 .switch-open-label::after{
-  content:"履歴を開く"; 
+  content:"履歴を開く";
 }
 .about__detail-histroy-switch:checked ~ .switch-open-label::after{
   content: "履歴を閉じる";
@@ -362,7 +371,7 @@
     text-align: left;
   }
   .about__description {
-    padding-bottom:20px;  
+    padding-bottom:20px;
   }
   .about__description p{
     text-align: left;
@@ -376,9 +385,7 @@
     white-space: pre; /*コードの上の改行は半角スペースになる。半角スペースを改行として表示するための記述。*/
   }
   .hobby-novel{
-    padding-left: 46px; 
-  }  
-  .about__description input{
+    padding-left: 46px;
   }
   .about__image ul{
     max-width: 768px;
@@ -425,6 +432,9 @@
 .works__card ul{
   list-style: none;
   margin: 0 15px 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .works__card ul li{
   display: inline-block;
@@ -434,6 +444,10 @@
   margin-bottom: 20px;
   background-color: #f3ebf4;
   border-radius: 10px;
+}
+.works__card ul li a{
+  color: #333;
+  text-decoration: none;
 }
 .works__picture{
   width: 100%;
@@ -475,7 +489,7 @@
     max-width: 768px;
     padding: 25px 0 0 15px;
     text-align: left;
-  } 
+  }
 }
 
 /*
@@ -507,7 +521,8 @@
   height: 300px;
   margin: 0 50px;
   text-align: left;
-  border: solid 1px #7484d9;
+  border-top: double 8px #7484d9;
+  border-bottom: double 8px #7484d9;
 }
 .blog__list ol li{
   list-style: none;
@@ -521,7 +536,7 @@
   font-weight: 600;
 }
 .blog__list ol li time::after{
-  content:" :";  
+  content:" :";
 }
 .blog__list ol li h3{
   display: inline-block;
@@ -562,7 +577,7 @@
 
 .contact{
   max-width: 1040px;
-  margin: 0 auto 120px;
+  margin: 0 auto 130px;
 }
 .contact__title{
   width: 149px;
@@ -578,27 +593,19 @@
   padding: 31px 0 0 16px;
   text-align: left;
 }
-.contact__content address{
-  max-width: 1040px;
-  padding-left: 62px;
-  font-style: normal;
+.contact__content{
   text-align: left;
+  padding: 0 0 20px 64px;
 }
-.contact__map{
-  max-width: 1040px;
-  height: 400px;
-  border: solid 1px #7484d9;
-  margin: 20px 62px 0px;
+.contact__message{
+  padding-bottom: 10px;
 }
-.contact__map iframe {
-  width: 100%;
-  height: 100%;
+.recent__state{
+  text-align: left;
+  padding-left: 64px;
 }
 
 @media (max-width: 768px){ /*iPad,mobile用の設定*/
-  .contact{
-    margin: 0 auto 110px;
-  }
   .contact__title{
     width: 116px;
     height: 50px;
@@ -612,30 +619,7 @@
     padding: 24px 0 0 15px;
     text-align: left;
   }
-  .contact__content address{
-    padding-left: 51px;
-    font-style: normal;
-    text-align: left;
-  }
-  .contact__map{
-    height: 350px;
-    border: solid 1px #7484d9;
-    margin: 20px 51px 0px;
-  }
-
-  .contact address .break-point:after{
-    content:"\A";
-    white-space: pre;
-  }
 }
-
-@media (max-width: 480px){ /*mobileの設定*/
-  .contact__map{
-    border: solid 1px #7484d9;
-    margin: 20px 24px 0px;
-  }
-}
-
 
 /*
   footer
@@ -644,35 +628,35 @@
 
 .footer{
   color: #ffffff;
+  text-align: center;
 }
 .footer__navigation{
   max-width: 1040px;
-  margin: 0 auto 80px;
-  text-align: left;
-  display: flex;
+  margin: 0 auto 40px;
+  display: block;
 }
 .footer__site-title{
-  width: 150px;
-  height: 135px;
-  position: relative;
-  vertical-align: text-top;
+  margin: 15px 0 20px;
 }
-.footer__site-title h2{
+.footer__site-title a{
   font-family: "vdl-penletter", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
-  text-align: left;
-  padding-left: 10px;
+  text-decoration: none;
+  color: #fff;
 }
-.footer__site-title img{
-  position: absolute;
-  right: 5px;
-  bottom: 0px;
+.footer__site-title a img{
+  object-fit: contain;
+  object-position: center;
+  width: 137px;
+  height: 22px;
 }
 .footer__site-map{
-  margin-left: 45px;
-  vertical-align: text-top;
-  flex: 1;
+  margin-bottom: 20px;
+}
+.footer__site-map ul li{
+  display: inline-block;
+  margin-right: 40px;
 }
 .footer__site-map li a{
   font-family: "vdl-v7marugothic", sans-serif;
@@ -680,16 +664,18 @@
   text-decoration: none;
   color: #ffffff;
 }
+.footer__site-map li:last-child{
+  margin-right: 0;
+}
 .footer__site-map li a:visited{
   color: #ffffff;
 }
 .footer__site-map li a:hover{
-  opacity: 1.0;
+  /* opacity: 1.0; */
 }
 
 .footer__navigation .sns{
   flex: 2;
-  text-align: right;
   min-width: 145px;
 }
 .footer__navigation .sns li{
@@ -709,54 +695,35 @@
 }
 .footer small{
   font-size: 1.2rem;
-  clear: both;
   display: block;
   text-align: center;
   padding-bottom: 20px;
 }
 
 body{
-  background-image: url("../images/top/FooterBackground_L.png");
+  background-image: url("../images/common/FooterBackground_L.png");
   background-position: bottom;
   background-repeat: repeat-x;
-  background-size: auto 697px;
+  background-size: auto;
 
 }
 
 @media (max-width: 480px){ /*mobile用の設定*/
   .footer__navigation{
-    margin: 0 auto 60px;
-    text-align: left;
-    position: relative;
+    margin: 0 auto 20px;
   }
   .footer__site-title{
-    width: 150px;
-    height: 115px;
-    display: inline-block;
-    position: relative;
-    vertical-align: text-top;
-  }
-  .footer__site-title img{
-    max-width: 48px;
-    max-height: 64px;
-    position: absolute;
-    left: 30px;
-    bottom: 0px;
+    margin-bottom: 15px;
   }
   .footer__site-map{
-    width: 60%;
-    display: flex;
-    vertical-align: text-top;
-    margin-left: 55px;
-    position: absolute;
-    left: 70px;
-    bottom: -2px;
-  }  
-  .footer__site-map-lefft{
-    flex: 2;
+    margin-bottom: 16px;
   }
-  .footer__site-map-right{
-    flex: 5;
+  .footer__site-map ul li{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .footer__site-map ul li:last-child{
+    margin-right: 0px;
   }
   .footer__navigation .sns li{
     display: inline-block;
@@ -765,18 +732,67 @@ body{
   .footer__navigation .sns li:last-child{
     margin-right: 10px;
   }
-  .footer small{
-    clear: both;
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-  }
 
   body{
-    background-image: url("../images/top/FooterBackground_mobile_L.png");
-    background-size: auto 320px;
-
+    background-image: url("../images/common/FooterBackground_mobile_L.png");
   }
+}
+
+/* 上に戻るボタン */
+.arrow-top-wrap{
+  width: 41px;
+  height: 41px;
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  border-radius: 10px;
+  /* mix-blend-mode: difference; */
+  background-color: #fff;
+}
+.arrow-top{
+  width: 41px;
+  height: 41px;
+  display: block;
+  position: fixed;
+  right: 20px;
+  bottom: 70px;
+  border: 2px solid #7484d9;
+  border-radius: 10px;
+}
+.arrow-top .arrow{
+  display: block;
+  width: 3px;
+  height: 22px;
+  position: absolute;
+  top: 8px;
+  left: 17px;
+  border-radius: 3px;
+  background-color: #7484d9;
+  content: "";
+}
+.arrow-top .arrow::before{
+  display: block;
+  width: 3px;
+  height: 12px;
+  position: absolute;
+  top: -2px;
+  left: -3px;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  background-color: #7484d9;
+  content: "";
+}
+.arrow-top .arrow::after{
+  display: block;
+  width: 3px;
+  height: 12px;
+  position: absolute;
+  top: -2px;
+  left: 3px;
+  transform: rotate(-45deg);
+  border-radius: 3px;
+  background-color: #7484d9;
+  content: "";
 }
 
 
