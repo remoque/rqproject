@@ -4,16 +4,18 @@
 <meta charset="UTF-8">
 <title>Remo Que Design</title>
 <link rel="stylesheet" href="assets/css/reset.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   <!-- jquery -->
+<script src="assets/colorbox/jquery.colorbox-min.js"></script>   <!-- modal -->
+<link rel="stylesheet" href="assets/colorbox/colorbox.css">
 <link rel="stylesheet" href="assets/css/common.css">
 <link rel="stylesheet" href="assets/css/top.css">
 <link rel="stylesheet" href="assets/css/works.css">
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   <!--jquery-->
 
 <meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
 <!-- Provide a short description of the page. -->
 <meta name="description" content="フリーランスデザイナーRemo Queのホームページです。">
 
-<!--　詳細はhttps://ogp.me/ を参照-->
+<!-- 詳細はhttps://ogp.me/ を参照-->
 <meta property="og:title" content="フリーランスデザイナーRemo Queのサイト「Remo Que Design」です。">
 
 <!-- Provides Facebook the name that you would like your website to be recognized by. -->
@@ -54,6 +56,7 @@
 </script>
 </head>
 <body>
+  <div class="body__wrap">
   <div class="header__background">
     <header class="header">
       <div class="header__navigation">
@@ -63,7 +66,7 @@
           <label id="nav-open" for="nav-input"><span></span></label>
           <label id="nav-close" class="none" for="nav-input"></label>
           <nav id="nav-drawer__content">
-            <h2 id="nav-drawer__content-title" class="nav-drawer__content-title none">Remo Que Design</h2>
+            <h2 id="nav-drawer__content-title" class="nav-drawer__content-title none"><img src="assets/images/common/TopRemoQue.png" alt="Remo Que Design"></h2>
             <ul>
               <li><a href="index.html#about">About</a></li>
               <li><a href="index.html#works">Works</a></li>
@@ -94,33 +97,68 @@
       <div class="works__card">
         <ul class="works__card-list">
           <li class="target" data-category="namecard">
-            <img class="works__picture" src="assets/images/top/namecade_Back.png" alt="実際に作成した名刺">
-            <div class="works__description">
-              <h3><span>名刺</span></h3>
-              <p>RemoQueの名刺<br>
-              <span class="tool">illustrator, Photoshop</span></p>
-            </div>
+            <a href="works/remoque-namecard.html" class="works-modal">
+              <img class="works__picture" src="assets/images/works/namecade_Back.png" alt="実際に作成した名刺">
+              <div class="works__description">
+                <h3><span>名刺</span></h3>
+                <p>RemoQueの名刺<br>
+                <span class="tool">illustrator, Photoshop</span></p>
+              </div>
+            </a>
           </li>
           <li class="target" data-category="logo">
-            <img class="works__picture" src="assets/images/top/namecade_Front.png" alt="実際に作成したロゴ">
-            <div class="works__description">
-              <h3><span>ロゴ</span></h3>
-              <p>RemoQueのロゴ<br>
-              <span class="tool">illustrator, Photoshop</span></p>
-            </div>
+            <a href="works/remoque-logo.html" class="works-modal">
+              <img class="works__picture" src="assets/images/works/namecade_Front.png" alt="実際に作成したロゴ">
+              <div class="works__description">
+                <h3><span>ロゴ</span></h3>
+                <p>RemoQueのロゴ<br>
+                <span class="tool">illustrator, Photoshop</span></p>
+              </div>
+            </a>
           </li>
           <li class="target" data-category="homepage">
-            <img class="works__picture" src="assets/images/top/profsite.png" alt="実際に作成したHP">
-            <div class="works__description">
-              <h3><span>ホームページ</span></h3>
-              <p>RemoQueのホームページ<br>
-              <span class="tool">html, css</span></p>
-            </div>
+            <a href="works/remoque-hp.html" class="works-modal">
+              <img class="works__picture" src="assets/images/works/profsite.png" alt="実際に作成したHP">
+              <div class="works__description">
+                <h3><span>ホームページ</span></h3>
+                <p>RemoQueのホームページ<br>
+                <span class="tool">html, css</span></p>
+              </div>
+            </a>
           </li>
+          <li class="target" data-category="namecard">
+            <a href="works/remoque-hp.html" class="works-modal">
+              <img class="works__picture" src="assets/images/works/profsite.png" alt="実際に作成したHP">
+              <div class="works__description">
+                <h3><span>名刺</span></h3>
+                <p>だいご名刺<br>
+                <span class="tool">illustrator</span></p>
+              </div>
+            </a>
+          </li>
+          <li class="target" data-category="illust">
+            <a href="works/do-cf-2308.html" class="works-modal" title="homepage">
+              <img class="works__picture" src="assets/images/works/cf_po_ar.png" alt="実際に作成したイラスト">
+              <div class="works__description">
+                <h3><span>イラスト</span></h3>
+                <p>説明図<br>
+                <span class="tool">illustrator</span></p>
+              </div>
+            </a>
+          </li>
+          <!-- <li class="target" data-category="illust">
+            <a href="" class="works-modal">
+              <img class="works__picture" src="assets/images/works/" alt="実際に作成したイラスト">
+              <div class="works__description">
+                <h3><span>イラスト</span></h3>
+                <p>説明図fig1<br>
+                <span class="tool">illustrator, Photoshop</span></p>
+              </div>
+            </a>
+          </li> -->
         </ul>
       </div>
     </section>
-
   </main>
   <footer class="footer">
     <nav class="footer__navigation">
@@ -153,6 +191,8 @@
     </div>
   </footer>
   <script src="assets/js/common.js"></script>
+  <script src="assets/js/works.js"></script>
+  </div>
   </div>
 </body>
 </html>

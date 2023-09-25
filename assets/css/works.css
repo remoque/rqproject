@@ -7,20 +7,30 @@
 .header{
   background-image: none;
 }
+@media ( width <= 768px ){
+  .header__background{
+    background-image: url("../images/works/bg_mobile_wpage.png");
+    background-position: top;
+    background-size:  auto;
+    background-repeat: repeat-x;
+  }
+}
 .works{
   margin-bottom: 180px;
 }
 .filter__btn{
-  margin: 20px auto 40px;
+  margin: 20px auto;
   padding-left: 50px;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
 }
 .filter__btn input{
   display: none;
 }
 .filter__btn label{
-  margin: 0 4px;
-  padding: 4px 10px;
+  margin: 0 6px 10px;
+  padding: 0 10px;
   color: #333;
   font-size: 1.4rem;
   text-decoration: none;
@@ -31,12 +41,12 @@
   opacity: 0.5;
 }
 .filter__btn input:checked + label.all,
+.filter__btn input:checked + label.namecard,
 .filter__btn input:checked + label.illust,
 .filter__btn input:checked + label.logo,
 .filter__btn input:checked + label.homepage {
   background-color: #f3ebf4;
 }
-
 .filter__btn div{
   display: inline-block;
   margin: 0 8px;
@@ -57,4 +67,7 @@
   height: 1.5px;
   background-color: #e478e4;
   border-radius: 2px;
+}
+.footer{
+  margin-top: 180px;
 }

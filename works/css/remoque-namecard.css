@@ -1,0 +1,108 @@
+body{
+}
+header{
+  /* margin-top: 5px; */
+  background-image: url(../image/common/work_detail_bg.png);
+  width: 100%;
+  background-position: top;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+.work__title{
+  padding: 20px 0 35px;
+  font-family: "vdl-penletter", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+main{
+  width: 100%;
+  margin: auto;
+}
+.work__message{
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 910px;
+  text-align: left;
+}
+.work__namecard{
+  margin: 10px auto 0;
+}
+.pic-namecard img{
+  margin: 20px 20px 15px;
+  max-width: 410px;
+  object-fit: cover;
+  object-position: center;
+  border: double 5px #89694e;
+  border-radius: 5px;
+}
+.work__points{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.work__points li{
+  margin: 0 20px;
+}
+.point{
+  width: 235px;
+  height: 175px;
+  background-image: url(../image/rq-namecard/frame.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.point h3{
+  font-weight: 500;
+  padding-top: 16px;
+}
+.point h4{
+  font-family: "vdl-penletter", sans-serif;
+  font-weight: 500;
+  padding-top: 4px;
+  text-decoration: underline;
+}
+.point p{
+  font-size: 1.2rem;
+  margin: 0 20px 20px;
+  text-align: left;
+}
+.cross, .cross::after{
+  display: block;
+  width: 25px;
+  height: 3px;
+  content: "";
+  background-color: #89694e;
+  border-radius: 5px;
+}
+.cross{
+  transform: rotate(45deg);
+}
+.cross::after{
+  transform: rotate(-90deg);
+}
+@media (width <= 480px){
+  .pic-namecard img{
+    margin: 20px 0;
+    max-width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border: double 5px #89694e;
+    border-radius: 5px;
+  }
+}
+@media (width <= 600px){
+  .work__points{
+    display: block;
+  }
+  .work__points li{
+    margin: 0 auto;
+  }
+  .work__points .cross{
+    margin: 20px auto;
+  }
+}
+
+.footer{
+  margin: 0;
+}

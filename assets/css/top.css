@@ -32,7 +32,6 @@
   width: 256px;
   height: 54.4px;
 }
-
 .header__navigation ul{
   margin-right: 10px;
 }
@@ -54,7 +53,6 @@
   color: #333333;
   opacity: 1;
 }
-
 .header__top{
   margin: 0 auto;
 }
@@ -67,7 +65,6 @@
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
-
 .header__top-image h2{
   max-width: 1040px;
   padding: 20px 0px 0 50px;
@@ -79,7 +76,6 @@
   text-align: left;
   color: #ffffff;
 }
-
 .header__top-description {
   max-width:1040px;
   margin: 0 auto ;
@@ -96,9 +92,8 @@
     margin-left: 20px;
   }
   .header__navigation ul li a{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
-
 }
 @media (max-width: 768px){ /*iPad,mobile用の設定*/
   .header{
@@ -108,7 +103,6 @@
     background-size: auto 373px;
     background-repeat: repeat-x;
   }
-
   .header__top{
     margin: 0 auto;
   }
@@ -171,7 +165,7 @@
   }
   #nav-open span,#nav-open span:before,#nav-open span:after{
     width: 20px;
-    height: 1px;
+    height: 2px;
     background-color: #333333;
     position: absolute;
     right: 10px;
@@ -328,7 +322,7 @@
 }
 .about__detail-histroy-body h3{
   font-weight: 500;
-  margin-left:39px;
+  margin-left:50px;
 }
 
 .about__image ul{
@@ -469,6 +463,22 @@
 }
 .works__description .tool{
   font-size: 1.2rem;
+}
+.works__more-button a{
+  display: block;
+  width: 120px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  border: solid 1px #7484d9;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 1px #7484d9;
+  border-radius: 12px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px){ /*iPad,mobile用の設定*/
@@ -700,7 +710,7 @@
   padding-bottom: 20px;
 }
 
-body{
+.body__wrap{
   background-image: url("../images/common/FooterBackground_L.png");
   background-position: bottom;
   background-repeat: repeat-x;
@@ -733,7 +743,7 @@ body{
     margin-right: 10px;
   }
 
-  body{
+  .body{
     background-image: url("../images/common/FooterBackground_mobile_L.png");
   }
 }
