@@ -1,5 +1,3 @@
-body{
-}
 header{
   /* margin-top: 5px; */
   background-image: url(../image/common/work_detail_bg.png);
@@ -13,6 +11,11 @@ header{
   font-family: "vdl-penletter", sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
+}
+@media ( width < 480px ){
+  .work__title{
+    font-size: 2.0rem;
+  }
 }
 main{
   width: 100%;
@@ -46,11 +49,12 @@ main{
   margin: 0 20px;
 }
 .point{
-  width: 235px;
+  width: 300px;
   height: 175px;
-  background-image: url(../image/rq-namecard/frame.png);
+  background-image: url(../image/common/frame.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100% 100%;
 }
 .point h3{
   font-weight: 500;
@@ -63,8 +67,9 @@ main{
   text-decoration: underline;
 }
 .point p{
-  font-size: 1.2rem;
-  margin: 0 20px 20px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 5px 20px 20px;
   text-align: left;
 }
 .cross, .cross::after{

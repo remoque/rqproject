@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="assets/css/common.css">
 <link rel="stylesheet" href="assets/css/top.css">
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>   <!--jquery-->
+<script src="assets/js/top.js" ></script>   <!--jquery-->
+
 
 <meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
 <!-- Provide a short description of the page. -->
@@ -68,7 +70,7 @@
           <ul>
             <li><a href="index.html#about">About</a></li>
             <li><a href="index.html#works">Works</a></li>
-            <li><a href="index.html#blog">Blog</a></li>
+            <li><a href="index.html#news">News</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </nav>
@@ -107,15 +109,17 @@
           <div class="about__detail-histroy-body">
             <h3>履歴 :</h3>
             <p>
-              2014年4月 : 大学入学<br>
-              2018年3月 : 大学卒業<br>
-              2018年4月 : 大学院入学<br>
-              2020年3月 : 大学院卒業<br>
-              2020年4月 : 開発職として企業に就職<br>
-              2022年9月 : 退職してポルトガルへ
+              2014年04月 : 大学入学<br>
+              2018年03月 : 大学卒業<br>
+              2018年04月 : 大学院入学<br>
+              2020年03月 : 大学院卒業<br>
+              2020年04月 : 開発職として企業に就職<br>
+              2022年09月 : 退職してポルトガルへ<br>
+              2022年12月 : デジタルハリウッドオンラインスクール入学<br>
+              2023年07月 : デジタルハリウッドオンラインスクール卒業
             </p>
           </div>
-          <label for="about__detail-histroy-switch" class="switch-open-label"></label>
+          <label for="about__detail-histroy-switch" class="switch-open-label"><span></span><span></span></label>
         </div>
       </div>
       <div class="about__image">
@@ -159,15 +163,17 @@
           </li>
         </ul>
       </div>
-      <div class="works__more-button">
-        <a href="works.html">もっと見る</a>
-      </div>
+      <a class="works__more-button" href="works.html">
+        <div class="works__more-box">
+          もっと見る
+        </div>
+      </a>
     </section>
-    <section class="blog">
-      <div class="blog__title">
-        <h2 id="blog">Blog</h2>
+    <section class="news">
+      <div class="news__title">
+        <h2 id="news">News</h2>
       </div>
-      <div class="blog__list">
+      <div class="news__list">
         <ol>
           <li>
             <h3>
@@ -209,14 +215,14 @@
       <div class="contact__content">
         <div class="contact__message">お仕事のお問い合わせは下記からお願いします。</div>
         <div class="contact__address">
-        Mail:remoquedesign@gmail.com <br>
-        X(Twitter):@remoquedesign <br>
-        Instagram:@remoquedesign
+        e-mail：<a href="mailto:remoquedesign@gmail.com">remoquedesign@gmail.com </a><br>
+        X(Twitter)：<a href="https://twitter.com/remo_que">@remo_que </a><br>
+        Instagram：<a href="https://www.instagram.com/remo_que/">@remo_que</a>
         </div>
       </div>
-      <div class="recent__state">
+      <!-- <div class="recent__state">
         最近の挙動はこちら。
-      </div>
+      </div> -->
     </section>
   </main>
   <footer class="footer">
@@ -229,7 +235,7 @@
           <li><a href="index.html#top">Top</a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#works">Works</a></li>
-          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#news">News</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </div>

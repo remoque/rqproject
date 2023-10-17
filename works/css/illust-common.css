@@ -1,0 +1,43 @@
+header{
+  /* margin-top: 5px; */
+  background-image: url(../image/common/work_detail_bg.png);
+  width: 100%;
+  background-position: top;
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+.work__title{
+  padding: 20px 0 35px;
+  font-family: "vdl-penletter", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+@media ( width < 480px ){
+  .work__title{
+    font-size: 2.0rem;
+  }
+}
+main{
+  width: 100%;
+  margin: auto;
+}
+.work__illust{
+  margin: 10px auto 0;
+}
+.work__message{
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 910px;
+  text-align: left;
+}
+.pic-illust img{
+  margin: 20px auto;
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  padding: 12px;
+  object-fit: cover;
+  object-position: 0 0;
+  border: double 5px #89694e;
+  border-radius: 5px;
+}

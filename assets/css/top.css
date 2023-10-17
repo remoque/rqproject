@@ -270,20 +270,18 @@
 .about__title h2{
   font-family: "vdl-v7marugothic", sans-serif;
   font-weight: 600;
-
   max-width: 1040px;
   padding: 17px 0 0 26px;
   text-align: left;
 }
 .about__description {
-  padding-bottom:40px;
+  padding-bottom: 56px;
 }
 .about__description p{
   text-align: left;
   padding-bottom: 20px;
   padding-left: 62px;
 }
-
 .about__detail-histroy-switch{
   display: none;
 }
@@ -291,25 +289,283 @@
 /*開閉ボタン*/
 .switch-open-label{
   display: block;
-  width: 120px;
-  font-size: 1.2rem;
-  line-height: 22px;
+  width: 180px;
+  font-size: 1.4rem;
+  line-height: 34px;
   text-align: center;
   background-color: #ffffff;
-  border: solid 1px #7484d9;
-  border-radius: 12px;
   padding: 0;
   margin: 0 auto;
+  position: relative;
 }
-.switch-open-label:hover{
-  background-color: #e8ecfa;
+.switch-open-label span{
+  display: block;
+  width: 180px;
+  height: 36px;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: solid 1px #7484d9;
+  border-radius: 36px;
+  transform-style: preserve-3d;
 }
+.switch-open-label:hover span:nth-child(1){
+  animation: rotatedown1 4s infinite;
+}
+.switch-open-label:hover span:nth-child(2){
+  animation: rotatedown2 4s infinite;
+}
+@keyframes rotatedown1 {
+  0%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  5%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  25%{
+    background: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  30%{
+    background: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  30.1%{
+    background: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  50%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  55%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  75%{
+    background: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  80%{
+    background: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  80.1%{
+    background: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  100%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+}
+@keyframes rotatedown2 {
+  0%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  5%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  25%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  30%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  50%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  55%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  55.1%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  75%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  80%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  100%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+}
+
 /*ラベルに表示するテキスト*/
-.switch-open-label::after{
+.switch-open-label span::after{
   content:"履歴を開く";
 }
-.about__detail-histroy-switch:checked ~ .switch-open-label::after{
+.about__detail-histroy-switch:checked ~ .switch-open-label span::after{
   content: "履歴を閉じる";
+}
+.about__detail-histroy-switch:checked ~ .switch-open-label:hover span:nth-child(1){
+  animation: rotateup1 4s infinite;
+}
+.about__detail-histroy-switch:checked ~ .switch-open-label:hover span:nth-child(2){
+  animation: rotateup2 4s infinite;
+}
+@keyframes rotateup1 {
+  0%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  5%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  25%{
+    background: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  30%{
+    background: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  30.1%{
+    background: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  50%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  55%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  75%{
+    background: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  80%{
+    background: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  80.1%{
+    background: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  100%{
+    background: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+}
+@keyframes rotateup2 {
+  0%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  5%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  25%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  30%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  50%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  55%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  55.1%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(-90deg);
+    transform-origin: 0 50%  -18px;
+  }
+  75%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  80%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(0deg);
+    transform-origin: 0 50%  -18px;
+  }
+  100%{
+    background: #7484d9;
+    color: #fff;
+    transform: rotateX(90deg);
+    transform-origin: 0 50%  -18px;
+  }
 }
 
 /*開閉エリア*/
@@ -363,9 +619,6 @@
     max-width: 768px;
     padding: 12px 0 0 15px;
     text-align: left;
-  }
-  .about__description {
-    padding-bottom:20px;
   }
   .about__description p{
     text-align: left;
@@ -426,16 +679,19 @@
 .works__card ul{
   list-style: none;
   margin: 0 15px 0 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-wrap: wrap;
+  justify-content: center; */
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns:repeat(auto-fit, minmax(290px, 1fr));
 }
 .works__card ul li{
   display: inline-block;
   text-align: left;
   max-width: 290px;
   margin-right: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   background-color: #f3ebf4;
   border-radius: 10px;
 }
@@ -464,21 +720,59 @@
 .works__description .tool{
   font-size: 1.2rem;
 }
-.works__more-button a{
-  display: block;
-  width: 120px;
-  line-height: 22px;
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2rem;
-  border: solid 1px #7484d9;
-  border-radius: 20px;
-  text-align: center;
-  background-color: #ffffff;
-  border: solid 1px #7484d9;
-  border-radius: 12px;
+.works__more-button{
   padding: 0;
   margin: 0 auto;
+  display: block;
+  width: 180px;
+  text-decoration: none;
+}
+.works__more-box{
+  border: solid 1px #7484d9;
+  border-radius: 18px;
+  line-height: 34px;
+  color: #333;
+  font-size: 1.4rem;
+  position: relative;
+  background-color: #fff;
+}
+.works__more-box::after{
+  display: block;
+  width: 180px;
+  height: 36px;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: solid 1px #7484d9;
+  border-radius: 18px;
+}
+.works__more-button:hover{
+  opacity: 1;
+}
+.works__more-button:hover .works__more-box::after{
+  animation: light 1.5s infinite;
+}
+@keyframes light {
+  0%{
+    transform: scale(1.0);
+    filter:
+    drop-shadow(0px 0px 2px #fadce9)
+    drop-shadow(0px 0px 2px #d2cce6)
+    drop-shadow(0px 0px 5px #d2cce6);
+  }
+  50% {
+    transform: scale(1.1, 1.45);
+    opacity: 0;
+    filter:
+    drop-shadow(0px 0px 2px #fadce9)
+    drop-shadow(0px 0px 2px #d2cce6)
+    drop-shadow(0px 0px 5px #d2cce6);
+  }
+  100% {
+    transform: scale(1.1, 1.45);
+    opacity: 0;
+  }
 }
 
 @media (max-width: 768px){ /*iPad,mobile用の設定*/
@@ -503,28 +797,28 @@
 }
 
 /*
-  blog
+  news
 */
 
-.blog{
+.news{
   max-width: 1040px;
   margin: 0 auto 120px;
 }
-.blog__title{
+.news__title{
   width: 114px;
   height: 63px;
   margin: 0 0 20px 24px;
-  background-image: url("../images/top/Blog_Background.png");
+  background-image: url("../images/top/news_Background.png");
   background-position: center;
   background-size: cover;
 }
-.blog__title h2{
+.news__title h2{
   font-family: "vdl-v7marugothic", sans-serif;
   max-width: 1040px;
   padding: 31px 0 0 26px;
   text-align: left;
 }
-.blog__list{
+.news__list{
   overflow:auto;
   max-width: 1040px;
   padding-top:12px;
@@ -534,48 +828,48 @@
   border-top: double 8px #7484d9;
   border-bottom: double 8px #7484d9;
 }
-.blog__list ol li{
+.news__list ol li{
   list-style: none;
   padding: 0 12px;
   margin-bottom: 30px;
 }
-.blog__list ol li:last-child{
+.news__list ol li:last-child{
   margin-bottom: 20px;
 }
-.blog__list ol li time{
+.news__list ol li time{
   font-weight: 600;
 }
-.blog__list ol li time::after{
+.news__list ol li time::after{
   content:" :";
 }
-.blog__list ol li h3{
+.news__list ol li h3{
   display: inline-block;
   font-weight: 600;
 }
 
 @media (max-width: 768px){ /*iPad,mobile用の設定*/
-  .blog{
+  .news{
     max-width: 768px;
     margin: 0 auto 90px;
   }
-  .blog__title{
+  .news__title{
     width: 90px;
     height: 49px;
     margin: 0 0 20px 24px;
-    background-image: url("../images/top/Blog_Background_mobile.png");
+    background-image: url("../images/top/news_Background_mobile.png");
     background-position: center;
     background-size: cover;
   }
-  .blog__title h2{
+  .news__title h2{
     font-family: "vdl-v7marugothic", sans-serif;
     max-width: 768px;
     padding: 24px 0 0 15px;
     text-align: left;
   }
-  .blog__list {
+  .news__list {
     margin: 0 51px;
   }
-  .blog__list ol li{
+  .news__list ol li{
     padding-left: 12px;
   }
 }
@@ -606,6 +900,10 @@
 .contact__content{
   text-align: left;
   padding: 0 0 20px 64px;
+}
+.contact__content a{
+  text-decoration: none;
+  color: #333;
 }
 .contact__message{
   padding-bottom: 10px;
