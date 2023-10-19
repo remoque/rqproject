@@ -50,7 +50,7 @@
   color: #333333;
 }
 .header__navigation ul li a:hover{
-  color: #333333;
+  color: #7484d9;
   opacity: 1;
 }
 .header__top{
@@ -153,9 +153,15 @@
   }
 }
 @media (max-width: 480px){ /*mobileの設定*/
-  #nav-drawer{
+  .header__navigation{
     position: relative;
+  }
+
+  #nav-drawer{
+    position: absolute;
     margin: 0;
+    top: 7px;
+    right: 0;
   }
   #nav-open{
     display: inline-block;
@@ -172,6 +178,7 @@
     top: 4px;
     display: block;
     content: "";
+    border-radius: 10px;
   }
   #nav-open span:before{
     top: 6px;
@@ -180,6 +187,9 @@
   #nav-open span:after{
     top: 12px;
     right: 0px;
+  }
+  #nav-open:hover span, #nav-open:hover span::before , #nav-open:hover span::after{
+    background-color: #7484d9;
   }
   #nav-close{
     z-index: 999;
@@ -217,14 +227,17 @@
     left: 5px;
   }
   .header__navigation ul{
-    margin-right: 0px;
-    padding-top: 20px;
+    margin-right: 24px;
+    padding-top: 32px;
   }
   .header__navigation ul li{
     display: block;
     margin-left: 0px;
   }
   .header__navigation ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     font-family: "vdl-v7marugothic", sans-serif;
     font-weight: 600;
     font-size: 1.6rem;
@@ -570,15 +583,22 @@
 
 /*開閉エリア*/
 .about__detail-histroy-body{
-  display: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0%);
+  transition: all 0.5s;
   text-align: left;
+  max-height: 0;
+  overflow: hidden;
 }
 .about__detail-histroy-switch:checked ~ .about__detail-histroy-body{
-  display: block;
+  max-height: 500px;
+  transition: all 0.6s;
 }
+
 .about__detail-histroy-body h3{
   font-weight: 500;
-  margin-left:50px;
+  margin-left: 50px;
 }
 
 .about__image ul{
@@ -711,7 +731,7 @@
   padding-bottom: 12px;
 }
 .works__description h3{
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 12px;
 }
 .works__description p{
@@ -837,14 +857,14 @@
   margin-bottom: 20px;
 }
 .news__list ol li time{
-  font-weight: 600;
+  font-weight: 700;
 }
 .news__list ol li time::after{
   content:" :";
 }
 .news__list ol li h3{
   display: inline-block;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @media (max-width: 768px){ /*iPad,mobile用の設定*/
@@ -881,7 +901,7 @@
 
 .contact{
   max-width: 1040px;
-  margin: 0 auto 130px;
+  margin: 0 auto 160px;
 }
 .contact__title{
   width: 149px;
@@ -899,7 +919,7 @@
 }
 .contact__content{
   text-align: left;
-  padding: 0 0 20px 64px;
+  margin: 0 0 20px 51px;
 }
 .contact__content a{
   text-decoration: none;
@@ -908,10 +928,18 @@
 .contact__message{
   padding-bottom: 10px;
 }
-.recent__state{
+.contact__address{
+  padding-left: 12px;
+}
+.contact__address span{
+  display: inline-block;
+  width: 75px;
+}
+
+/* .recent__state{
   text-align: left;
   padding-left: 64px;
-}
+} */
 
 @media (max-width: 768px){ /*iPad,mobile用の設定*/
   .contact__title{
@@ -1001,6 +1029,16 @@
   height: 36px;
   padding:4px 2px 0;
 }
+
+.sns-link .twitter_icon{
+  width: 30px;
+  height: 30px;
+}
+.sns-link .instagram_icon{
+  width: 32px;
+  height: 32px;
+}
+
 .footer small{
   font-size: 1.2rem;
   display: block;

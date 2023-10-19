@@ -24,3 +24,13 @@ a:hover {
 .none{
   display: none;
 }
+
+/* 読み込み時のフォントのちらつき対策 */
+html {
+  visibility: hidden;
+}
+
+html.wf-active,
+html.loading-delay {
+  visibility: visible;
+}
