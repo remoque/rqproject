@@ -53,6 +53,7 @@
   color: #7484d9;
   opacity: 1;
 }
+
 .header__top{
   margin: 0 auto;
 }
@@ -71,7 +72,7 @@
   margin: 0 auto;
   font-family: "vdl-penletter", sans-serif;
   font-weight: 500;
-  font-size: 3.0rem;
+  font-size: 2.8rem;
   line-height: 1.5;
   text-align: left;
   color: #ffffff;
@@ -608,14 +609,14 @@
 }
 .about__image ul li{
   width: 160px;
-  height: 170px;
+  height: 160px;
   display: inline-block;
   margin-right: 80px;
   margin-bottom: 20px;
 }
 .about__image ul li img{
   width: 160px;
-  height: 172px;
+  height: 160px;
   object-fit: cover;
   object-position: center;
 }
@@ -661,8 +662,8 @@
     margin: 0 auto;
   }
   .about__image ul li{
-    max-width: 110px;
-    max-height: 118px;
+    max-width: 120px;
+    max-height: 120px;
     display: inline-block;
     margin: 0 17px 35px;
   }
