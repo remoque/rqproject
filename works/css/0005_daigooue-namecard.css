@@ -1,0 +1,33 @@
+.work__bonus{
+  margin: 60px auto 0;
+  max-width: 870px;
+}
+.work__bonus h2{
+  padding: 40px 20px 8px;
+  margin: 0 auto;
+  max-width: 910px;
+  text-align: left;
+  font-size: 2.0rem;
+  font-weight: 700;
+  border-top: dashed 3px #89694e;
+}
+.work__bonus ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.work__bonus ul li{
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: subgrid;
+  margin: 20px;
+}
+.work__bonus img{
+  width: 100%;
+  align-self: end;
+}
+.work__bonus p{
+  width: 100%;
+  padding: 8px 12px 0;
+  text-align: left;
+}

@@ -52,13 +52,13 @@
   margin: 0 8px;
 }
 .works__description h3 span{
-  padding: 0 1px;
+  padding: 0 5px 0 1px ;
   display: inline-block;
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.2;
-  /* border-bottom: solid 2px #e478e4; */
 }
+
 .works__description h3 span::after{
   content: "";
   display: block;
